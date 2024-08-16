@@ -40,6 +40,8 @@ a:hover {
   align-items: center;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 #hero h1 {
   font-size: 3rem;
@@ -128,25 +130,27 @@ a:hover {
   font-size: 16px;
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  .section-bg-dark .section-title h2 {
-    font-size: 28px;
-  }
-  .section-bg-dark .icon-box {
-    padding: 20px;
-  }
-  .section-bg-dark .icon-box .icon {
-    font-size: 36px;
-  }
-  .section-bg-dark .icon-box .title {
-    font-size: 20px;
-  }
-  .section-bg-dark .icon-box .description {
-    font-size: 14px;
-  }
+#history {
+  background-color: #273343;
+  padding: 60px 0;
+}
+#history .img-fluid {
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+#history h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#history p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.8;
 }
 #why-us {
-  background: #000 url('../images/porque-elegirnos\ -bg.jpg') no-repeat center center fixed;
+  background: #000 url('../images/porque-elegirnos-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 60px 0;
   color: #ccc;
@@ -207,57 +211,155 @@ a:hover {
 #why-us .content .read-more:hover {
   text-decoration: underline;
 }
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.hero-video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.hero-video-section .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-.header {
-  background-color: #0056b3 !important;
-}
-.header .navbar .navbar-brand img {
-  max-height: 50px;
-}
-.header .navbar .navbar-nav .nav-link {
+.hero-video-section .content {
+  position: relative;
+  z-index: 1;
   color: #fff;
-  font-weight: 500;
-  padding: 10px 15px;
-  transition: color 0.3s;
+  text-align: center;
 }
-.header .navbar .navbar-nav .nav-link:hover {
-  color: #ff5733;
+.hero-video-section .content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
-.header .navbar .navbar-nav .nav-link.active {
-  color: #ff5733;
+.hero-video-section .content p {
+  font-size: 1.5rem;
+}
+.gallery-page {
+  padding: 60px 0;
+  background-color: #1e2733;
+  color: #fff;
+}
+.gallery-page h1,
+.gallery-page h2 {
+  color: #0056b3;
+}
+.gallery-page .gallery-item img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.gallery-page .gallery-item-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-page .gallery-item-inner {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.gallery-page .gallery-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.gallery-page .gallery-item-title {
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 600;
-  border-bottom: 2px solid #ff5733;
-  animation: fadeIn 0.8s linear;
+  text-transform: uppercase;
 }
-.header .navbar .navbar-toggler {
+.gallery-page .gallery-item-wrapper:hover .gallery-item-inner {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.gallery-page .gallery-item-wrapper:hover .gallery-item-overlay {
+  opacity: 1;
+}
+.gallery-page .video-wrapper {
+  background-color: #293445;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.gallery-page .video-wrapper iframe {
   border: none;
+  width: 100%;
+  height: 200px;
 }
-.header .navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+@media (max-width: 768px) {
+  .gallery-page .gallery-page {
+    padding: 30px 0;
+  }
+  .gallery-page .gallery-item-title {
+    font-size: 1rem;
+  }
+  .gallery-page .video-wrapper iframe {
+    height: 150px;
+  }
+}
+.gallery-page .animate__animated {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.clients-page {
+  padding: 60px 0;
+}
+.clients-page h1,
+.clients-page p.lead {
+  color: #0056b3;
+}
+.clients-page .client-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 120px;
+  /* Tamaño fijo para la altura del contenedor */
+}
+.clients-page .client-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+.clients-page .client-logo-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .clients-page .clients-page {
+    padding: 30px 0;
+  }
+  .clients-page .client-logo-wrapper {
+    height: 100px;
+    /* Ajuste para dispositivos móviles */
+  }
 }
 .footer {
   background-color: #001f3f;
   color: #fff;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   text-align: center;
 }
 .footer .footer-container .footer-col {
@@ -370,4 +472,41 @@ a:hover {
   font-size: 20px;
   line-height: 50px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .section-bg-dark .section-title h2 {
+    font-size: 28px;
+  }
+  .section-bg-dark .icon-box {
+    padding: 20px;
+  }
+  .section-bg-dark .icon-box .icon {
+    font-size: 36px;
+  }
+  .section-bg-dark .icon-box .title {
+    font-size: 20px;
+  }
+  .section-bg-dark .icon-box .description {
+    font-size: 14px;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

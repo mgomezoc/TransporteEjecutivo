@@ -55,6 +55,8 @@ a {
     align-items: center;
     text-align: center;
     color: @heading-color;
+    position: relative;
+    z-index: 1;
     h1 {
         font-size: 3rem;
         margin-bottom: 20px;
@@ -156,30 +158,33 @@ a {
     }
 }
 
-// Responsive adjustments
-@media (max-width: 768px) {
-    .section-bg-dark {
-        .section-title h2 {
-            font-size: 28px;
-        }
-        .icon-box {
-            padding: 20px;
-            .icon {
-                font-size: 36px;
-            }
-            .title {
-                font-size: 20px;
-            }
-            .description {
-                font-size: 14px;
-            }
-        }
+// History Page Styles
+#history {
+    background-color: lighten(#1e2733, 5%);
+    padding: 60px 0;
+
+    .img-fluid {
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        color: lighten(#fff, 20%);
+        font-size: 16px;
+        line-height: 1.8;
     }
 }
 
 // Why Us Section
 #why-us {
-    background: #000 url('../images/porque-elegirnos\ -bg.jpg') no-repeat center center fixed;
+    background: #000 url('../images/porque-elegirnos-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 60px 0;
     color: #ccc;
@@ -243,75 +248,182 @@ a {
     }
 }
 
-// Animaciones
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
+// Hero Video Section for Servicios
+.hero-video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+
+    .content {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+        }
     }
 }
 
-@keyframes fadeInUp {
-    0% {
+// Gallery Page Styles
+.gallery-page {
+    padding: 60px 0;
+    background-color: #1e2733;
+    color: #fff;
+
+    h1,
+    h2 {
+        color: @primary-color;
+    }
+
+    .gallery-item img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item-wrapper {
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .gallery-item-inner {
+        transition: transform 0.3s ease-in-out;
+        border-radius: 8px;
+    }
+
+    .gallery-item-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
         opacity: 0;
-        transform: translateY(20px);
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
     }
-    100% {
+
+    .gallery-item-title {
+        color: @heading-color;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .gallery-item-wrapper:hover .gallery-item-inner {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-item-wrapper:hover .gallery-item-overlay {
         opacity: 1;
-        transform: translateY(0);
     }
-}
 
-// Header
-.header {
-    background-color: @primary-color !important;
+    .video-wrapper {
+        background-color: #293445;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
 
-    .navbar {
-        .navbar-brand {
-            img {
-                max-height: 50px;
-            }
-        }
-
-        .navbar-nav {
-            .nav-link {
-                color: #fff;
-                font-weight: 500;
-                padding: 10px 15px;
-                transition: color 0.3s;
-
-                &:hover {
-                    color: @secondary-color;
-                }
-
-                &.active {
-                    color: @secondary-color;
-                    font-weight: 600;
-                    border-bottom: 2px solid @secondary-color;
-                    animation: fadeIn 0.8s linear;
-                }
-            }
-        }
-
-        .navbar-toggler {
+        iframe {
             border: none;
+            width: 100%;
+            height: 200px;
+        }
+    }
 
-            .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-            }
+    @media (max-width: 768px) {
+        .gallery-page {
+            padding: 30px 0;
+        }
+
+        .gallery-item-title {
+            font-size: 1rem;
+        }
+
+        .video-wrapper iframe {
+            height: 150px;
+        }
+    }
+
+    .animate__animated {
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+}
+
+// Clients Page Styles
+.clients-page {
+    padding: 60px 0;
+
+    h1,
+    p.lead {
+        color: @primary-color;
+    }
+
+    .client-logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        height: 120px; /* Tamaño fijo para la altura del contenedor */
+    }
+
+    .client-logo {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .client-logo-wrapper:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+        .clients-page {
+            padding: 30px 0;
+        }
+
+        .client-logo-wrapper {
+            height: 100px; /* Ajuste para dispositivos móviles */
         }
     }
 }
 
-// Footer
+// Footer Styles
 .footer {
     background-color: #001f3f; // Color primario más oscuro para mejor contraste
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     text-align: center;
 
     .footer-container {
@@ -333,7 +445,7 @@ a {
                 text-decoration: none;
                 transition: color 0.3s ease;
                 &:hover {
-                    color: lighten(#ff5733, 20%);
+                    color: lighten(@secondary-color, 20%);
                 }
                 & i {
                     display: inline-block;
@@ -374,13 +486,13 @@ a {
                 button {
                     padding: 10px 20px;
                     border: none;
-                    background-color: #ff5733;
+                    background-color: @secondary-color;
                     color: #fff;
                     border-radius: 4px;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
                     &:hover {
-                        background-color: darken(#ff5733, 10%);
+                        background-color: darken(@secondary-color, 10%);
                     }
                 }
             }
@@ -391,7 +503,7 @@ a {
                     margin: 0 10px;
                     font-size: 18px;
                     &:hover {
-                        color: lighten(#ff5733, 20%);
+                        color: lighten(@secondary-color, 20%);
                     }
                 }
             }
@@ -435,5 +547,49 @@ a {
         font-size: 20px;
         line-height: 50px;
         color: #fff;
+    }
+}
+
+// Responsive adjustments for the Services Section
+@media (max-width: 768px) {
+    .section-bg-dark {
+        .section-title h2 {
+            font-size: 28px;
+        }
+        .icon-box {
+            padding: 20px;
+            .icon {
+                font-size: 36px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .description {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Animaciones
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

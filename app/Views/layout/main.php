@@ -75,27 +75,27 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= $locale === 'es' ? 'Inicio' : 'Home' ?></a>
+                                <a class="nav-link <?= (uri_string() == esc($locale)) ? 'active' : '' ?>" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= $locale === 'es' ? 'Inicio' : 'Home' ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= $locale === 'es' ? 'Historia' : 'History' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/historia') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= $locale === 'es' ? 'Historia' : 'History' ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= $locale === 'es' ? 'Servicios' : 'Services' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/servicios') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= $locale === 'es' ? 'Servicios' : 'Services' ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= $locale === 'es' ? 'Galería de Imágenes' : 'Gallery' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/galeria') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= $locale === 'es' ? 'Galería de Imágenes' : 'Gallery' ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= $locale === 'es' ? 'Nuestros Clientes' : 'Clients' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/clientes') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= $locale === 'es' ? 'Nuestros Clientes' : 'Clients' ?></a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url('/es') ?>"><i class="fa-solid fa-globe"></i> ES</a>
+                                <a class="nav-link <?= ($locale == 'es') ? 'active' : '' ?>" href="<?= base_url('/es') ?>"><i class="fa-solid fa-globe"></i> ES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url('/en') ?>"><i class="fa-solid fa-globe"></i> EN</a>
+                                <a class="nav-link <?= ($locale == 'en') ? 'active' : '' ?>" href="<?= base_url('/en') ?>"><i class="fa-solid fa-globe"></i> EN</a>
                             </li>
                         </ul>
                     </div>
@@ -113,7 +113,7 @@
             <div class="container footer-container">
                 <div class="row">
                     <!-- Información del Cliente -->
-                    <div class="col-lg-4 footer-col">
+                    <div class="col-lg-6 footer-col">
                         <img src="<?= base_url('assets/images/logo.png') ?>" alt="Transporte Ejecutivo" class="footer-logo">
                         <p>Atención 24 Horas de Lunes a Domingo.</p>
                         <p>Contacta con nosotros para obtener servicios de transporte ejecutivo de alta calidad.</p>
@@ -124,21 +124,14 @@
                         </ul>
                     </div>
 
-                    <!-- Contacto -->
-                    <div class="col-lg-4 footer-col">
+                    <!-- Contacto y Redes Sociales -->
+                    <div class="col-lg-6 footer-col">
                         <h5>Contáctanos:</h5>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ryk.das@gmail.com" target="_blank"><i class="fa fa-envelope"></i> ryk.das@gmail.com</a></p>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@transporte-ejecutivo.com" target="_blank"><i class="fa fa-envelope"></i> info@transporte-ejecutivo.com</a></p>
-                    </div>
 
-                    <!-- Suscripción -->
-                    <div class="col-lg-4 footer-col">
-                        <h5>Suscríbete a nuestro boletín:</h5>
-                        <form action="<?= base_url('subscribe') ?>" method="post" class="subscribe-form">
-                            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                            <button type="submit" class="btn btn-primary">Suscribirse</button>
-                        </form>
-                        <div class="social-links mt-3">
+                        <div class="social-links mt-4">
+                            <h5>Síguenos en:</h5>
                             <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
@@ -151,6 +144,7 @@
                 © Transporte Ejecutivo - Todos los derechos reservados.
             </div>
         </footer>
+
 
     </div>
 

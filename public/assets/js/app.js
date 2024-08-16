@@ -11,7 +11,6 @@ AOS.init({
     mirror: false // Las animaciones no se repiten al desplazarse hacia arriba
 });
 
-
 $(document).ready(function () {
     // Show or hide the scroll to top button
     $(window).scroll(function () {
