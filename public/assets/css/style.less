@@ -1,0 +1,439 @@
+// Variables
+@primary-color: #0056b3;
+@secondary-color: #ff5733;
+@background-color: #f8f9fa;
+@text-color: #333;
+@font-family: 'Raleway', sans-serif;
+@heading-color: #fff;
+@hero-bg: url('../images/slider/slider-1.png') no-repeat center center/cover;
+
+html::-webkit-scrollbar-thumb {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f05959), to(#bb4040));
+    background: linear-gradient(180deg, #f05959, #bb4040);
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+html::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
+}
+html::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+// Global Styles
+body {
+    font-family: @font-family;
+    color: @text-color;
+    background-color: @background-color;
+    line-height: 1.6;
+    overflow-x: hidden; // Previene scroll horizontal no deseado
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: @heading-color;
+}
+
+a {
+    color: @primary-color;
+    &:hover {
+        color: darken(@primary-color, 10%);
+    }
+}
+
+// Hero Section
+#hero {
+    background: @hero-bg;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: @heading-color;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: fadeInDown 1.2s ease-in-out;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        animation: fadeInUp 1.2s ease-in-out;
+    }
+    .btn-get-started {
+        padding: 12px 36px;
+        background-color: @primary-color;
+        color: @heading-color;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        animation: fadeInUp 1.4s ease-in-out;
+        text-decoration: none;
+        &:hover {
+            background-color: @secondary-color;
+        }
+    }
+}
+
+// Services Section
+.section-bg-dark {
+    background-color: #1e2733; // Fondo oscuro
+    padding: 60px 0;
+    color: #fff; // Texto claro
+    .section-title {
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #fff; // Texto blanco para el título
+        }
+        p {
+            font-size: 18px;
+            color: lighten(#fff, 20%); // Texto más claro
+            margin-bottom: 40px;
+        }
+    }
+
+    .icon-box {
+        background: #293445; // Fondo más oscuro para las cajas
+        border-radius: 8px;
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        transition-duration: 0.2s !important;
+
+        &.aeropuerto {
+            background: #293445 url(../images/servicios-aeropuerto.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &.foreano {
+            background: #293445 url(../images/servicios-foraneo.jpg) no-repeat center center;
+            background-size: cover;
+            & .icon {
+                color: @primary-color;
+            }
+        }
+
+        &.mensajeria {
+            background: #293445 url(../images/servicios-mensajeria.png) no-repeat center center;
+            background-size: cover;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 40px;
+            color: @secondary-color;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            color: @primary-color;
+            margin-bottom: 15px;
+            a {
+                color: @heading-color;
+                text-decoration: none;
+                &:hover {
+                    color: lighten(@primary-color, 10%);
+                }
+            }
+        }
+
+        .description {
+            font-size: 16px;
+            color: lighten(#fff, 20%); // Texto más claro en la descripción
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .section-bg-dark {
+        .section-title h2 {
+            font-size: 28px;
+        }
+        .icon-box {
+            padding: 20px;
+            .icon {
+                font-size: 36px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .description {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Why Us Section
+#why-us {
+    background: #000 url('../images/porque-elegirnos\ -bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 0;
+    color: #ccc;
+    .video-box {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            color: @heading-color;
+            text-align: center;
+            line-height: 64px;
+            font-size: 32px;
+            transition: background 0.3s ease;
+            &:hover {
+                background: lighten(@primary-color, 10%);
+            }
+        }
+    }
+    .content {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                padding-left: 40px;
+                position: relative;
+                margin-bottom: 20px;
+                &::before {
+                    content: '\f058';
+                    font-family: 'Font Awesome 6 Pro';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: @secondary-color;
+                    font-size: 20px;
+                }
+            }
+        }
+        .read-more {
+            color: @secondary-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            i {
+                margin-left: 10px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Animaciones
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Header
+.header {
+    background-color: @primary-color !important;
+
+    .navbar {
+        .navbar-brand {
+            img {
+                max-height: 50px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: #fff;
+                font-weight: 500;
+                padding: 10px 15px;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: @secondary-color;
+                }
+
+                &.active {
+                    color: @secondary-color;
+                    font-weight: 600;
+                    border-bottom: 2px solid @secondary-color;
+                    animation: fadeIn 0.8s linear;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    background-color: #001f3f; // Color primario más oscuro para mejor contraste
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+
+    .footer-container {
+        .footer-col {
+            margin-bottom: 30px;
+
+            h5 {
+                color: lighten(#0056b3, 20%);
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            p,
+            li,
+            a {
+                color: #ccc;
+                font-size: 14px;
+                line-height: 1.8;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: lighten(#ff5733, 20%);
+                }
+                & i {
+                    display: inline-block;
+                    margin-right: 1em;
+                }
+            }
+
+            .footer-contact {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin-bottom: 10px;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        & i {
+                            display: inline-block;
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+
+            .footer-logo {
+                max-width: 150px;
+                margin-bottom: 20px;
+            }
+
+            .subscribe-form {
+                display: flex;
+                input[type='email'] {
+                    flex: 1;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: #ff5733;
+                    color: #fff;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    &:hover {
+                        background-color: darken(#ff5733, 10%);
+                    }
+                }
+            }
+
+            .social-links {
+                a {
+                    color: lighten(#fff, 20%);
+                    margin: 0 10px;
+                    font-size: 18px;
+                    &:hover {
+                        color: lighten(#ff5733, 20%);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copy {
+        background-color: darken(#001f3f, 10%);
+        padding: 15px 0;
+        font-size: 14px;
+        color: lighten(#ccc, 10%);
+        margin-top: 20px;
+    }
+}
+
+// Scroll to Top Button
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: @primary-color;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    i {
+        font-size: 20px;
+        line-height: 50px;
+        color: #fff;
+    }
+}

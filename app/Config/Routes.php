@@ -27,3 +27,6 @@ $routes->group('{locale}', ['filter' => 'language'], function ($routes) {
 $routes->get('/', function () {
     return redirect()->to('/es');
 });
+
+// Ruta para manejar el error 404 personalizado
+$routes->set404Override('ErrorsController::custom404');
