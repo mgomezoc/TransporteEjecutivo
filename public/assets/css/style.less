@@ -131,16 +131,36 @@ a {
     color: @heading-color;
     position: relative;
     z-index: 1;
+
     h1 {
         font-size: 3rem;
         margin-bottom: 20px;
-        animation: fadeInDown 1.2s ease-in-out;
+        animation: fadeInDown 1.2s ease-in-out; // Animación de entrada
+        opacity: 0; // Inicia invisible para la animación personalizada
+        transform: translateY(-20px); // Posición inicial fuera de la vista
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out; // Transición para suavizar la animación
+        animation-delay: 0.3s; // Demora para hacer la animación más interesante
+        animation-fill-mode: forwards; // Asegura que la animación se mantenga en su estado final
     }
+
     h2 {
         font-size: 1.5rem;
         margin-bottom: 30px;
-        animation: fadeInUp 1.2s ease-in-out;
+        animation: fadeInUp 1.5s ease-in-out; // Animación de entrada
+        opacity: 0; // Inicia invisible para la animación personalizada
+        transform: translateY(20px); // Posición inicial fuera de la vista
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out; // Transición para suavizar la animación
+        animation-delay: 0.6s; // Demora para hacer la animación más interesante
+        animation-fill-mode: forwards; // Asegura que la animación se mantenga en su estado final
     }
+
+    // Transiciones adicionales si se desea algún efecto al pasar el cursor
+    h1:hover,
+    h2:hover {
+        transform: scale(1.05); // Amplía ligeramente el texto al pasar el cursor
+        transition: transform 0.3s ease-in-out;
+    }
+
     .btn-get-started {
         padding: 12px 36px;
         background-color: @primary-color;
