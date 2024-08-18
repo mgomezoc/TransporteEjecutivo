@@ -111,7 +111,7 @@
         </main>
 
         <section id="clientes-carousel" class="clients-carousel section-bg">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <?php

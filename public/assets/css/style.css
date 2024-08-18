@@ -115,6 +115,9 @@ a:hover {
   position: relative;
   z-index: 1;
 }
+#hero.historia {
+  background: #ccc url('../images/slider/slider-historia.png');
+}
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
