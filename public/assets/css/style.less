@@ -121,6 +121,36 @@ a {
     }
 }
 
+.clients-carousel {
+    padding: 60px 0;
+    background-color: #1e2733; // Fondo oscuro para resaltar los logos
+    .swiper-container {
+        padding: 20px 0;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #001f3f;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swiper-slide img {
+        max-width: 100%;
+        max-height: 60px;
+        object-fit: contain;
+    }
+
+    .swiper-slide:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+}
+
 // Hero Section
 #hero {
     background: @hero-bg;

@@ -31,18 +31,21 @@
     <meta name="twitter:image" content="<?= base_url('img/og-image.png') ?>">
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('apple-touch-icon.png') ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('favicon-32x32.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('favicon-16x16.png') ?>">
-    <link rel="manifest" href="<?= base_url('site.webmanifest') ?>">
-    <link rel="mask-icon" href="<?= base_url('safari-pinned-tab.svg') ?>" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>?v=<?= time() ?>">
     <?= $this->renderSection('styles') ?>
 
@@ -107,6 +110,47 @@
             <?= $this->renderSection('content') ?>
         </main>
 
+        <section id="clientes-carousel" class="clients-carousel section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <?php
+                        $clientes = [
+                            '_0004_azteca.png',
+                            '_0002_chrysler.png',
+                            '_0009_televisa.png',
+                            '_0018_universal.png',
+                            '_0005_powertrain.png',
+                            '_0006_millsteel.png',
+                            '_0007_martinrea.png',
+                            '_0008_jiffytite.png',
+                            '_0010_faurencia.png',
+                            '_0012_metalflow.png',
+                            '_0014_maussan.png',
+                            '_0016_formex.png',
+                            '_0019_spentech.png',
+                            '_0020_das.png',
+                            '_0022_brunner.png',
+                            'airway.png',
+                            'goss.png',
+                            'LaZboy.jpg',
+                            'pacCNC.jpg',
+                            'ufi.png',
+                            'yanfeng_2.jpg',
+                            'yanfeng.png',
+                        ];
+
+                        foreach ($clientes as $cliente): ?>
+                            <div class="swiper-slide">
+                                <img src="<?= base_url('assets/images/clientes/' . $cliente) ?>" alt="<?= pathinfo($cliente, PATHINFO_FILENAME) ?>" class="img-fluid">
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Footer -->
         <footer class="footer">
             <div class="container footer-container">
@@ -138,10 +182,10 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="<?= base_url('assets/js/vendor/modernizr-3.11.2.min.js') ?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="<?= base_url('assets/js/app.js') ?>"></script>
     <?= $this->renderSection('scripts') ?>
 </body>
