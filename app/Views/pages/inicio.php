@@ -59,8 +59,12 @@ transporte ejecutivo, transporte terrestre, servicios de transporte, seguridad, 
         </div>
         <div class="row">
             <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
-                <img src="<?= base_url('assets/images/porque-elegirnos.jpg') ?>" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=-JdG_iIP8WY&list=RD-JdG_iIP8WY&start_radio=1" class="play-btn mb-4"></a>
+                <video class="img-fluid" controls preload="auto" loading="lazy" poster="<?= base_url('assets/images/porque-elegirnos.jpg') ?>">
+                    <source src="<?= base_url('assets/images/porque-elegirnos.mp4') ?>" type="video/mp4">
+                    <source src="<?= base_url('assets/images/porque-elegirnos.webm') ?>" type="video/webm">
+                    <source src="<?= base_url('assets/images/porque-elegirnos.ogv') ?>" type="video/ogg">
+                    Tu navegador no soporta la reproducción de este video.
+                </video>
             </div>
             <div class="col-lg-6 pt-3 pt-lg-0 content">
                 <h3>Experiencia y Calidad en Cada Viaje</h3>
@@ -77,6 +81,7 @@ transporte ejecutivo, transporte terrestre, servicios de transporte, seguridad, 
         </div>
     </div>
 </section>
+
 
 <?= $this->endSection() ?>
 

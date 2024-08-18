@@ -16,7 +16,10 @@ $(document).ready(function () {
         slidesPerView: 5,
         spaceBetween: 15, // Disminuye el espacio entre las diapositivas
         loop: true,
-
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
         breakpoints: {
             320: {
                 slidesPerView: 2,

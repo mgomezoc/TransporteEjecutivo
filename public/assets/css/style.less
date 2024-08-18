@@ -372,6 +372,22 @@ a {
     }
 }
 
+.video-box {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que el video cubra el contenedor */
+}
+
 // Hero Video Section for Servicios
 .hero-video-section {
     position: relative;
