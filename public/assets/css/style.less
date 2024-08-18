@@ -6,6 +6,10 @@
 @font-family: 'Raleway', sans-serif;
 @heading-color: #fff;
 @hero-bg: url('../images/slider/slider-1.png') no-repeat center center/cover;
+@header-bg-color: #003366; // Color de fondo del header, ajustado para armonizar con el logo
+@header-border-color: darken(@header-bg-color, 10%);
+@nav-link-active-bg: darken(@primary-color, 10%);
+@nav-link-hover-bg: lighten(@primary-color, 10%);
 
 html::-webkit-scrollbar-thumb {
     background: -webkit-gradient(linear, left top, left bottom, from(#f05959), to(#bb4040));
@@ -44,6 +48,76 @@ a {
     color: @primary-color;
     &:hover {
         color: darken(@primary-color, 10%);
+    }
+}
+
+// Header Styles
+.header {
+    background-color: @header-bg-color !important;
+    border-bottom: 3px solid @header-border-color; // Borde inferior sutil para separación
+
+    .navbar {
+        padding: 15px 0; // Espaciado para mayor equilibrio
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        .navbar-brand {
+            img {
+                max-height: 60px; // Ajusta el tamaño del logo para mejor proporción
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: lighten(@heading-color, 60%);
+                font-weight: 500;
+                padding: 10px 20px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: @heading-color;
+                    background-color: @nav-link-hover-bg;
+                    border-radius: 5px; // Bordes redondeados para mejorar la interacción
+                }
+
+                &.active {
+                    color: @heading-color;
+                    font-weight: 600;
+                    background-color: @nav-link-active-bg;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+        }
+    }
+}
+
+// Additional Styles for Active Page
+.active-page {
+    background-color: @nav-link-active-bg; // Fondo para la página activa
+    color: @heading-color; // Texto blanco
+}
+
+// Responsive adjustments for the header
+@media (max-width: 768px) {
+    .header {
+        .navbar-nav {
+            .nav-link {
+                padding: 8px 15px; // Ajusta el espaciado en pantallas pequeñas
+            }
+        }
+
+        .navbar-brand {
+            img {
+                max-height: 50px; // Ajusta el tamaño del logo en pantallas pequeñas
+            }
+        }
     }
 }
 

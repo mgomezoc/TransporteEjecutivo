@@ -103,7 +103,6 @@
             </nav>
         </header>
 
-
         <main class="">
             <?= $this->renderSection('content') ?>
         </main>
@@ -118,25 +117,16 @@
                         <p>Atención 24 Horas de Lunes a Domingo.</p>
                         <p>Contacta con nosotros para obtener servicios de transporte ejecutivo de alta calidad.</p>
                         <ul class="footer-contact">
-                            <li><a href="https://wa.me/528442553625" target="_blank"><i class="fa fa-phone"></i> Local: 844•255•3625</a></li>
-                            <li><a href="https://wa.me/528444277018" target="_blank"><i class="fa fa-mobile-alt"></i> Cel: 844•427•7018</a></li>
-                            <li><a href="https://wa.me/528442553625" target="_blank"><i class="fa fa-phone"></i> USA: +52(844)255•3625</a></li>
+                            <li><a href="https://wa.me/528444277018" target="_blank"><i class="fa fa-phone"></i> Local: 844•427•7018</a></li>
                         </ul>
                     </div>
 
-                    <!-- Contacto y Redes Sociales -->
+                    <!-- Contacto y Correos Electrónicos -->
                     <div class="col-lg-6 footer-col">
                         <h5>Contáctanos:</h5>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ryk.das@gmail.com" target="_blank"><i class="fa fa-envelope"></i> ryk.das@gmail.com</a></p>
-                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@transporte-ejecutivo.com" target="_blank"><i class="fa fa-envelope"></i> info@transporte-ejecutivo.com</a></p>
-
-                        <div class="social-links mt-4">
-                            <h5>Síguenos en:</h5>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=luiis.das@gmail.com" target="_blank"><i class="fa fa-envelope"></i> luiis.das@gmail.com</a></p>
+                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tapiaangel899@gmail.com" target="_blank"><i class="fa fa-envelope"></i> tapiaangel899@gmail.com</a></p>
                     </div>
                 </div>
             </div>
@@ -144,8 +134,6 @@
                 © Transporte Ejecutivo - Todos los derechos reservados.
             </div>
         </footer>
-
-
     </div>
 
     <!-- JavaScript -->

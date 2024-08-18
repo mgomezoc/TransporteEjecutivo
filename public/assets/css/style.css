@@ -33,6 +33,52 @@ a {
 a:hover {
   color: #003d80;
 }
+.header {
+  background-color: #003366 !important;
+  border-bottom: 3px solid #001933;
+}
+.header .navbar {
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .navbar .navbar-brand img {
+  max-height: 60px;
+}
+.header .navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.header .navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #006fe6;
+  border-radius: 5px;
+}
+.header .navbar .navbar-nav .nav-link.active {
+  color: #fff;
+  font-weight: 600;
+  background-color: #003d80;
+  border-radius: 5px;
+}
+.header .navbar .navbar-toggler {
+  border: none;
+}
+.header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.active-page {
+  background-color: #003d80;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .header .navbar-nav .nav-link {
+    padding: 8px 15px;
+  }
+  .header .navbar-brand img {
+    max-height: 50px;
+  }
+}
 #hero {
   background: url('../images/slider/slider-1.png') no-repeat center center / cover;
   height: 100vh;
