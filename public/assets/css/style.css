@@ -432,12 +432,16 @@ a:hover {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+#clients {
+  background-color: #273343;
+  padding: 60px 0;
+}
 .clients-page {
   padding: 60px 0;
 }
 .clients-page h1,
 .clients-page p.lead {
-  color: #0056b3;
+  color: #dc3545;
 }
 .clients-page .client-logo-wrapper {
   display: flex;
@@ -449,7 +453,6 @@ a:hover {
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 120px;
-  /* Tamaño fijo para la altura del contenedor */
 }
 .clients-page .client-logo {
   max-width: 100%;
@@ -467,7 +470,6 @@ a:hover {
   }
   .clients-page .client-logo-wrapper {
     height: 100px;
-    /* Ajuste para dispositivos móviles */
   }
 }
 .footer {

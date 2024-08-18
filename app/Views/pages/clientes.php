@@ -1,25 +1,25 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('title') ?>
-Nuestros Clientes - Transporte Ejecutivo
+Nuestros Clientes - Transporte Ejecutivo Terrestre
 <?= $this->endSection() ?>
 
 <?= $this->section('description') ?>
-Descubra las empresas que confían en nosotros para sus necesidades de transporte. Conozca a nuestros clientes.
+Descubra las empresas que confían en Transporte Ejecutivo Terrestre para sus necesidades de transporte. Conozca a nuestros clientes y por qué nos eligen.
 <?= $this->endSection() ?>
 
 <?= $this->section('keywords') ?>
-clientes, transporte ejecutivo, empresas, confianza, Monterrey, servicios de transporte
+nuestros clientes, transporte ejecutivo, empresas confiables, Monterrey, transporte seguro, transporte corporativo
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
 
-<section class="clients-page">
-    <div class="container">
+<section id="clients" class="clients-page">
+    <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 mb-4">Nuestros Clientes</h1>
-                <p class="lead">Estas son algunas de las empresas que confían en nuestros servicios de transporte ejecutivo.</p>
+                <p class="lead text-white">Estas son algunas de las empresas que confían en nuestros servicios de transporte ejecutivo.</p>
             </div>
         </div>
 
@@ -27,34 +27,35 @@ clientes, transporte ejecutivo, empresas, confianza, Monterrey, servicios de tra
             <!-- Galería de Clientes -->
             <?php
             $clientes = [
+                'airway.png',
+                'goss.png',
+                'LaZboy.jpg',
+                'pacCNC.jpg',
+                'ufi.png',
+                'yanfeng.png',
+                'yanfeng_2.jpg',
                 '_0000_lazboy.png',
-                '_0015_doubletree.png',
-                '_0007_martinrea.png',
-                '_0005_powertrain.png',
-                '_0016_formex.png',
-                '_0002_chrysler.png',
-                '_0004_azteca.png',
-                '_0009_televisa.png',
                 '_0001_polyone.png',
-                '_0010_faurencia.png',
-                '_0013_leon.png',
-                '_0006_millsteel.png',
-                '_0008_jiffytite.png',
-                '_0014_maussan.png',
-                '_0011_kpmg.png',
+                '_0002_chrysler.png',
                 '_0003_bocar.png',
+                '_0004_azteca.png',
+                '_0005_powertrain.png',
+                '_0006_millsteel.png',
+                '_0007_martinrea.png',
+                '_0008_jiffytite.png',
+                '_0009_televisa.png',
+                '_0010_faurencia.png',
+                '_0011_kpmg.png',
                 '_0012_metalflow.png',
+                '_0013_leon.png',
+                '_0014_maussan.png',
+                '_0015_doubletree.png',
+                '_0016_formex.png',
                 '_0017_hegenscheidt.png',
                 '_0018_universal.png',
                 '_0019_spentech.png',
                 '_0020_das.png',
-                '_0022_brunner.png',
-                'pacCNC.jpg',
-                'yanfeng.png',
-                'airway.png',
-                'ufi.png',
-                'Captura de Pantalla 2021-05-25 a la(s) 18.04.06.png',
-                'Screenshot_20240815_131132_Chrome.jpg'
+                '_0022_brunner.png'
             ];
             foreach ($clientes as $cliente): ?>
                 <div class="col-6 col-sm-4 col-md-3 mb-4">

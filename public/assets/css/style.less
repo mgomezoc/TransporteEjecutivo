@@ -529,26 +529,29 @@ a {
         animation-fill-mode: forwards;
     }
 }
-
 // Clients Page Styles
-.clients-page {
+#clients {
+    background-color: #273343;
     padding: 60px 0;
+}
+.clients-page {
+    padding: 60px 0; // Alineación con otras secciones
 
     h1,
     p.lead {
-        color: @primary-color;
+        color: #dc3545;
     }
 
     .client-logo-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
-        border: 1px solid #ddd;
+        background-color: #fff; // Fondo blanco para destacar los logos
+        border: 1px solid #ddd; // Borde sutil para separar los logos
         padding: 15px;
         border-radius: 8px;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        height: 120px; /* Tamaño fijo para la altura del contenedor */
+        height: 120px; // Tamaño fijo para la altura del contenedor
     }
 
     .client-logo {
@@ -559,17 +562,17 @@ a {
     }
 
     .client-logo-wrapper:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px); // Efecto de elevación en hover
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); // Sombra en hover para resaltar
     }
 
     @media (max-width: 768px) {
         .clients-page {
-            padding: 30px 0;
+            padding: 30px 0; // Ajuste para pantallas pequeñas
         }
 
         .client-logo-wrapper {
-            height: 100px; /* Ajuste para dispositivos móviles */
+            height: 100px; // Ajuste para dispositivos móviles
         }
     }
 }
