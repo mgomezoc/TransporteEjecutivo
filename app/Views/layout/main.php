@@ -119,14 +119,14 @@
                             '_0004_azteca.png',
                             '_0002_chrysler.png',
                             '_0009_televisa.png',
-                            '_0018_universal.png',
+                            'el_universal.jpeg',
                             '_0005_powertrain.png',
                             '_0006_millsteel.png',
                             '_0007_martinrea.png',
                             '_0008_jiffytite.png',
                             '_0010_faurencia.png',
                             '_0012_metalflow.png',
-                            '_0014_maussan.png',
+                            'maussan.jpeg',
                             '_0016_formex.png',
                             '_0019_spentech.png',
                             '_0020_das.png',
@@ -161,7 +161,7 @@
                         <p><?= lang('Messages.footer_contact') ?></p>
                         <p><?= lang('Messages.footer_quality') ?></p>
                         <ul class="footer-contact">
-                            <li><a href="https://wa.me/528444277018" target="_blank"><i class="fa fa-phone"></i> Local: 844•427•7018</a></li>
+                            <li><a href="https://wa.me/528444277018" target="_blank"><i class="fa fa-phone"></i> +528444277018</a></li>
                         </ul>
                     </div>
 

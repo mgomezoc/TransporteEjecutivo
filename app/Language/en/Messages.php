@@ -2,7 +2,7 @@
 
 return [
     // General messages and layout (main.php)
-    'company_name' => 'Executive Transportation',
+    'company_name' => 'Executive Ground Transportation',
     'all_rights_reserved' => 'All rights reserved',
     'home' => 'Home',
     'history' => 'History',
@@ -32,24 +32,23 @@ return [
     'time_service_desc' => 'Ideal for visiting different clients in the metropolitan area while we wait for you.',
     'why_choose_us' => 'Why Choose Us?',
     'experience_quality' => 'Experience and Quality in Every Trip',
-    'experience_quality_desc' => 'With over 20 years in the market, we provide high-quality executive transportation services, prioritizing safety and comfort in every trip.',
+    'experience_quality_desc' => 'With over 25 years in the market, we provide high-quality executive transportation services, prioritizing safety and comfort in every trip.',
     'certified_drivers' => 'Certified drivers and modern vehicles.',
     'service_24_7' => '24/7 service and personalized attention.',
     'security_comfort' => 'Guaranteed safety and comfort in every trip.',
     'discover_more' => 'Discover more',
     'video_not_supported' => 'Your browser does not support video playback.',
 
-
     // History page messages (historia.php)
     'history_title' => 'History',
-    'history_description' => 'Discover the history of Executive Ground Transportation: over 18 years providing safe and reliable transportation services in Saltillo, Monterrey, and other destinations.',
-    'history_keywords' => 'executive transportation, transportation history, safe transportation, transportation in Saltillo, transportation in Monterrey, ground transportation, evasive driving, transportation safety',
+    'history_description' => 'Discover the history of Executive Ground Transportation: over 25 years providing safe and reliable transportation services across Mexico and the United States.',
+    'history_keywords' => 'executive transportation, transportation history, safe transportation, transportation in Mexico, transportation in the United States, ground transportation, evasive driving, transportation safety',
     'history_heading' => 'Our History',
-    'history_subheading' => 'Over 18 years providing safe and quality transportation in Northern Mexico',
+    'history_subheading' => 'Over 25 years providing safe and quality transportation across Mexico and the United States',
     'history_image_alt' => 'History of Executive Ground Transportation',
-    'history_content_1' => 'Based in Saltillo, Executive Ground Transportation has been a trusted pillar in transportation services in Northern Mexico, covering Saltillo, Monterrey, Nuevo Laredo, and Laredo, TX. Since we began operations over 18 years ago, we have been dedicated to providing safe, reliable, and high-quality transportation services.',
-    'history_content_2' => 'Our reputation has been built on customer satisfaction. With a constant focus on safety, our drivers undergo annual training in the "Evasive Driving & Accident Avoidance" course, ensuring that every trip is handled by experts.',
-    'history_content_3' => 'Whether for airport transportation or services within and outside the city, we are committed to providing exceptional service with 24/7 attention. The quality of our service has allowed us to gain the preference of clients over the years, becoming their trusted transportation option.',
+    'history_content_1' => 'Based in Saltillo, Executive Ground Transportation has been a trusted pillar in transportation services across Mexico and the United States, covering cities such as Saltillo, Monterrey, Nuevo Laredo, Laredo, TX., Cancún, Hermosillo, and more. Since we began operations over 25 years ago, we have been dedicated to providing safe, reliable, and high-quality transportation services.',
+    'history_content_2' => 'Our reputation has been built on customer satisfaction. With a constant focus on safety, our drivers undergo annual training in the "Evasive Driving & Accident Avoidance" course, ensuring that every trip is handled by experts. We also offer specialized services like "hand carrier" for urgent deliveries.',
+    'history_content_3' => 'Whether for airport transportation, services within and outside the city, or international trips, we are committed to providing exceptional service with 24/7 attention. The quality of our service has allowed us to gain the preference of clients over the years, becoming their trusted transportation option in multiple cities across Mexico and the United States.',
 
     // Services page messages (servicios.php)
     'services_page_title' => 'Services - Executive Transportation',

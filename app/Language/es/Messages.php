@@ -2,7 +2,7 @@
 
 return [
     // Mensajes generales y del layout (main.php)
-    'company_name' => 'Transporte Ejecutivo',
+    'company_name' => 'Transporte Ejecutivo Terrestre',
     'all_rights_reserved' => 'Todos los derechos reservados',
     'home' => 'Inicio',
     'history' => 'Historia',
@@ -32,7 +32,7 @@ return [
     'time_service_desc' => 'Ideal para visitas a diferentes clientes en el área metropolitana mientras nosotros te esperamos.',
     'why_choose_us' => '¿Por Qué Elegirnos?',
     'experience_quality' => 'Experiencia y Calidad en Cada Viaje',
-    'experience_quality_desc' => 'Con más de 20 años en el mercado, proporcionamos servicios de transporte ejecutivo de alta calidad, priorizando la seguridad y confort en cada viaje.',
+    'experience_quality_desc' => 'Con más de 25 años en el mercado, proporcionamos servicios de transporte ejecutivo de alta calidad, priorizando la seguridad y confort en cada viaje.',
     'certified_drivers' => 'Conductores certificados y vehículos modernos.',
     'service_24_7' => 'Servicio 24/7 y atención personalizada.',
     'security_comfort' => 'Seguridad y confort garantizados en cada viaje.',
@@ -41,14 +41,14 @@ return [
 
     // Mensajes de la página de historia (historia.php)
     'history_title' => 'Historia',
-    'history_description' => 'Descubre la historia de Transporte Ejecutivo Terrestre: más de 18 años brindando servicios de transporte seguro y confiable en Saltillo, Monterrey y otros destinos.',
-    'history_keywords' => 'transporte ejecutivo, historia de transporte, transporte seguro, transporte en Saltillo, transporte en Monterrey, transporte terrestre, evasive driving, seguridad en transporte',
+    'history_description' => 'Descubre la historia de Transporte Ejecutivo Terrestre: más de 25 años brindando servicios de transporte seguro y confiable en todo México y Estados Unidos.',
+    'history_keywords' => 'transporte ejecutivo, historia de transporte, transporte seguro, transporte en México, transporte en Estados Unidos, transporte terrestre, evasive driving, seguridad en transporte',
     'history_heading' => 'Nuestra Historia',
-    'history_subheading' => 'Más de 18 años ofreciendo transporte seguro y de calidad en el norte de México',
+    'history_subheading' => 'Más de 25 años ofreciendo transporte seguro y de calidad en todo México y Estados Unidos',
     'history_image_alt' => 'Historia de Transporte Ejecutivo Terrestre',
-    'history_content_1' => 'Con sede en Saltillo, Transporte Ejecutivo Terrestre ha sido un pilar de confianza en servicios de transporte en el norte de México, abarcando Saltillo, Monterrey, Nuevo Laredo y Laredo, Tx. Desde que comenzamos nuestras operaciones hace más de 18 años, nos hemos dedicado a ofrecer servicios de transporte seguros, confiables y de alta calidad.',
-    'history_content_2' => 'Nuestra reputación se ha construido sobre la base de la satisfacción de nuestros clientes. Con un enfoque constante en la seguridad, nuestros conductores son capacitados anualmente en el curso "Evasive Driving & Accident Avoidance", asegurando que cada viaje esté en manos de expertos.',
-    'history_content_3' => 'Ya sea para transporte al aeropuerto o servicios dentro y fuera de la ciudad, nos hemos comprometido a ofrecer un servicio excepcional con atención 24/7. La calidad de nuestro servicio nos ha permitido ganar la preferencia de clientes a lo largo de los años, convirtiéndonos en su opción de transporte de confianza.',
+    'history_content_1' => 'Con sede en Saltillo, Transporte Ejecutivo Terrestre ha sido un pilar de confianza en servicios de transporte en todo México y Estados Unidos, abarcando ciudades como Saltillo, Monterrey, Nuevo Laredo, Laredo, Tx., Cancún, Hermosillo, y más. Desde que comenzamos nuestras operaciones hace más de 25 años, nos hemos dedicado a ofrecer servicios de transporte seguros, confiables y de alta calidad.',
+    'history_content_2' => 'Nuestra reputación se ha construido sobre la base de la satisfacción de nuestros clientes. Con un enfoque constante en la seguridad, nuestros conductores son capacitados anualmente en el curso "Evasive Driving & Accident Avoidance", asegurando que cada viaje esté en manos de expertos. Además, ofrecemos servicios especializados como "hand carrier" para entregas urgentes.',
+    'history_content_3' => 'Ya sea para transporte al aeropuerto, servicios dentro y fuera de la ciudad, o viajes internacionales, nos hemos comprometido a ofrecer un servicio excepcional con atención 24/7. La calidad de nuestro servicio nos ha permitido ganar la preferencia de clientes a lo largo de los años, convirtiéndonos en su opción de transporte de confianza en múltiples ciudades de México y Estados Unidos.',
 
     // Mensajes de la página de servicios (servicios.php)
     'services_page_title' => 'Servicios - Transporte Ejecutivo',

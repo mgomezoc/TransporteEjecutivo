@@ -48,14 +48,17 @@
                 '_0011_kpmg.png',
                 '_0012_metalflow.png',
                 '_0013_leon.png',
-                '_0014_maussan.png',
+                'maussan.jpeg',
                 '_0015_doubletree.png',
                 '_0016_formex.png',
                 '_0017_hegenscheidt.png',
-                '_0018_universal.png',
+                'el_universal.jpeg',
                 '_0019_spentech.png',
                 '_0020_das.png',
-                '_0022_brunner.png'
+                '_0022_brunner.png',
+                'adient.jpeg',
+                'bocar.jpeg',
+                'gm.jpeg'
             ];
             foreach ($clientes as $cliente): ?>
                 <div class="col-6 col-sm-4 col-md-3 mb-4">
