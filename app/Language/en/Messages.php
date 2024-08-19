@@ -37,5 +37,39 @@ return [
     'service_24_7' => '24/7 service and personalized attention.',
     'security_comfort' => 'Guaranteed safety and comfort in every trip.',
     'discover_more' => 'Discover more',
-    'video_not_supported' => 'Your browser does not support video playback.'
+    'video_not_supported' => 'Your browser does not support video playback.',
+
+    // Services page messages (servicios.php)
+    'services_page_title' => 'Services - Executive Transportation',
+    'services_page_description' => 'We offer a wide range of transportation services, including airport transfers, out-of-town services, messaging, and hourly transportation. Our commitment to quality and customer satisfaction sets us apart.',
+    'services_page_keywords' => 'transportation services, executive transportation, airport transfers, messaging, Monterrey, out-of-town transportation, hourly transportation',
+    'services_hero_title' => 'Executive Transportation Services',
+    'services_hero_subtitle' => 'Quality, Comfort, and Safety in Every Trip',
+    'our_services' => 'Our Services',
+    'services_hero_button' => 'Learn More',
+    'airport' => 'Airport',
+    'airport_desc' => 'City-Airport-City transportation. Enjoy safe and punctual transfers to and from the airport.',
+    'foraneos' => 'Out-of-Town',
+    'foraneos_desc' => 'Transportation within and outside the city. Travel comfortably with our high-quality intercity service.',
+    'mensajeria' => 'Messaging',
+    'mensajeria_desc' => 'Messaging service within and outside the city. Fast and secure deliveries for your peace of mind.',
+    'tiempo' => 'Hourly Service',
+    'tiempo_desc' => 'This service allows you to visit different clients in the metropolitan area of Monterrey while we wait for you.',
+
+    // Gallery page messages (galeria.php)
+    'gallery_page_title' => 'Image Gallery - Executive Transportation',
+    'gallery_page_description' => 'Explore our image and video gallery. Discover our certifications, vehicles, and more.',
+    'gallery_page_keywords' => 'image gallery, executive transportation, certifications, vehicles, videos, Monterrey',
+    'image_gallery' => 'Image Gallery',
+    'explore_gallery' => 'Explore our certifications, vehicles, and more through this image and video gallery.',
+    'certifications' => 'Certifications',
+    'vehicles' => 'Vehicles',
+    'videos' => 'Videos',
+
+    // Clients page messages (clientes.php)
+    'clients_page_title' => 'Our Clients - Executive Ground Transportation',
+    'clients_page_description' => 'Discover the companies that trust Executive Ground Transportation for their transportation needs. Meet our clients and learn why they choose us.',
+    'clients_page_keywords' => 'our clients, executive transportation, trusted companies, Monterrey, safe transportation, corporate transportation',
+    'our_clients' => 'Our Clients',
+    'clients_trust' => 'These are some of the companies that trust our executive transportation services.',
 ];

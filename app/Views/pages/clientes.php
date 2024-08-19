@@ -1,15 +1,15 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('title') ?>
-Nuestros Clientes - Transporte Ejecutivo Terrestre
+<?= lang('Messages.clients_page_title') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('description') ?>
-Descubra las empresas que confían en Transporte Ejecutivo Terrestre para sus necesidades de transporte. Conozca a nuestros clientes y por qué nos eligen.
+<?= lang('Messages.clients_page_description') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('keywords') ?>
-nuestros clientes, transporte ejecutivo, empresas confiables, Monterrey, transporte seguro, transporte corporativo
+<?= lang('Messages.clients_page_keywords') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
@@ -18,8 +18,8 @@ nuestros clientes, transporte ejecutivo, empresas confiables, Monterrey, transpo
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 mb-4">Nuestros Clientes</h1>
-                <p class="lead text-white">Estas son algunas de las empresas que confían en nuestros servicios de transporte ejecutivo.</p>
+                <h1 class="display-4 mb-4"><?= lang('Messages.our_clients') ?></h1>
+                <p class="lead text-white"><?= lang('Messages.clients_trust') ?></p>
             </div>
         </div>
 

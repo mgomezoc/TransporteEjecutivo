@@ -1,15 +1,15 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('title') ?>
-Galería de Imágenes - Transporte Ejecutivo
+<?= lang('Messages.gallery_page_title') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('description') ?>
-Explore nuestra galería de imágenes y videos. Conozca nuestras certificaciones, vehículos y más.
+<?= lang('Messages.gallery_page_description') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('keywords') ?>
-galería de imágenes, transporte ejecutivo, certificaciones, vehículos, videos, Monterrey
+<?= lang('Messages.gallery_page_keywords') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
@@ -19,15 +19,15 @@ galería de imágenes, transporte ejecutivo, certificaciones, vehículos, videos
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 mb-4">Galería de Imágenes</h1>
-                <p class="lead">Explore nuestras certificaciones, vehículos y más a través de esta galería de imágenes y videos.</p>
+                <h1 class="display-4 mb-4"><?= lang('Messages.image_gallery') ?></h1>
+                <p class="lead"><?= lang('Messages.explore_gallery') ?></p>
             </div>
         </div>
 
         <!-- Galería de Certificados -->
         <div class="row justify-content-center mt-5">
             <div class="col-12">
-                <h2 class="mb-4 text-center">Certificados</h2>
+                <h2 class="mb-4 text-center"><?= lang('Messages.certifications') ?></h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <a href="<?= base_url('assets/images/certificados/cert1.png') ?>" class="gallery-item" data-fancybox="certificados">
@@ -52,17 +52,16 @@ galería de imágenes, transporte ejecutivo, certificaciones, vehículos, videos
         <!-- Galería de Vehículos -->
         <div class="row justify-content-center mt-5">
             <div class="col-12">
-                <h2 class="mb-4 text-center">Vehículos</h2>
+                <h2 class="mb-4 text-center"><?= lang('Messages.vehicles') ?></h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Galería de Vehículos -->
                     <?php for ($i = 1; $i <= 27; $i++): ?>
                         <div class="col">
                             <div class="gallery-item-wrapper">
                                 <a href="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="gallery-item" data-fancybox="vehiculos">
                                     <div class="gallery-item-inner">
-                                        <img src="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="img-fluid rounded" alt="Vehículo <?= $i ?>">
+                                        <img src="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="img-fluid rounded" alt="<?= lang('Messages.vehicle') ?> <?= $i ?>">
                                         <div class="gallery-item-overlay">
-                                            <div class="gallery-item-title">Vehículo <?= $i ?></div>
+
                                         </div>
                                     </div>
                                 </a>
@@ -76,7 +75,7 @@ galería de imágenes, transporte ejecutivo, certificaciones, vehículos, videos
         <!-- Galería de Videos -->
         <div class="row justify-content-center mt-5">
             <div class="col-12">
-                <h2 class="mb-4 text-center">Videos</h2>
+                <h2 class="mb-4 text-center"><?= lang('Messages.videos') ?></h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="video-wrapper">

@@ -37,5 +37,39 @@ return [
     'service_24_7' => 'Servicio 24/7 y atención personalizada.',
     'security_comfort' => 'Seguridad y confort garantizados en cada viaje.',
     'discover_more' => 'Descubre más',
-    'video_not_supported' => 'Tu navegador no soporta la reproducción de este video.'
+    'video_not_supported' => 'Tu navegador no soporta la reproducción de este video.',
+
+    // Mensajes de la página de servicios (servicios.php)
+    'services_page_title' => 'Servicios - Transporte Ejecutivo',
+    'services_page_description' => 'Ofrecemos una amplia gama de servicios de transporte, incluyendo traslados al aeropuerto, servicios foráneos, mensajería y transporte por tiempo. Nuestro compromiso con la calidad y la satisfacción del cliente nos distingue.',
+    'services_page_keywords' => 'servicios de transporte, transporte ejecutivo, traslados al aeropuerto, mensajería, Monterrey, transporte foráneo, transporte por tiempo',
+    'services_hero_title' => 'Servicios de Transporte Ejecutivo',
+    'services_hero_subtitle' => 'Calidad, Confort y Seguridad en Cada Viaje',
+    'our_services' => 'Nuestros Servicios',
+    'services_hero_button' => 'Descubre Más',
+    'airport' => 'Aeropuerto',
+    'airport_desc' => 'Transporte Ciudad-Aeropuerto-Ciudad. Disfrute de un traslado seguro y puntual hacia y desde el aeropuerto.',
+    'foraneos' => 'Foráneos',
+    'foraneos_desc' => 'Transporte dentro y fuera de la ciudad. Viaje cómodamente con nuestro servicio interurbano de alta calidad.',
+    'mensajeria' => 'Mensajería',
+    'mensajeria_desc' => 'Servicio de mensajería dentro y fuera de la ciudad. Entregas rápidas y seguras para su tranquilidad.',
+    'tiempo' => 'Servicio por tiempo',
+    'tiempo_desc' => 'Este tipo de servicio le permite realizar visitas a diferentes clientes en el área metropolitana de Monterrey mientras nosotros le esperamos.',
+
+    // Mensajes de la página de galería (galeria.php)
+    'gallery_page_title' => 'Galería de Imágenes - Transporte Ejecutivo',
+    'gallery_page_description' => 'Explore nuestra galería de imágenes y videos. Conozca nuestras certificaciones, vehículos y más.',
+    'gallery_page_keywords' => 'galería de imágenes, transporte ejecutivo, certificaciones, vehículos, videos, Monterrey',
+    'image_gallery' => 'Galería de Imágenes',
+    'explore_gallery' => 'Explore nuestras certificaciones, vehículos y más a través de esta galería de imágenes y videos.',
+    'certifications' => 'Certificados',
+    'vehicles' => 'Vehículos',
+    'videos' => 'Videos',
+
+    // Mensajes de la página de clientes (clientes.php)
+    'clients_page_title' => 'Nuestros Clientes - Transporte Ejecutivo Terrestre',
+    'clients_page_description' => 'Descubra las empresas que confían en Transporte Ejecutivo Terrestre para sus necesidades de transporte. Conozca a nuestros clientes y por qué nos eligen.',
+    'clients_page_keywords' => 'nuestros clientes, transporte ejecutivo, empresas confiables, Monterrey, transporte seguro, transporte corporativo',
+    'our_clients' => 'Nuestros Clientes',
+    'clients_trust' => 'Estas son algunas de las empresas que confían en nuestros servicios de transporte ejecutivo.',
 ];
