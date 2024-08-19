@@ -1,15 +1,15 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('title') ?>
-<?= lang('Messages.title') ?> <!-- Título dinámico según el idioma -->
+<?= lang('Messages.title') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('description') ?>
-<?= lang('Messages.description') ?> <!-- Descripción dinámica según el idioma -->
+<?= lang('Messages.description') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('keywords') ?>
-<?= lang('Messages.keywords') ?> <!-- Keywords dinámicas según el idioma -->
+<?= lang('Messages.keywords') ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
@@ -17,8 +17,8 @@
 <!-- Hero Section -->
 <section id="hero" class="d-flex align-items-center">
     <div class="container text-center" data-aos="fade-up">
-        <h1><?= lang('Messages.hero_title') ?></h1> <!-- Título hero dinámico -->
-        <h2><?= lang('Messages.hero_subtitle') ?></h2> <!-- Subtítulo hero dinámico -->
+        <h1><?= lang('Messages.hero_title') ?></h1>
+        <h2><?= lang('Messages.hero_subtitle') ?></h2>
         <a href="#services" class="btn-get-started scrollto"><?= lang('Messages.learn_more') ?></a>
     </div>
 </section>
@@ -27,8 +27,8 @@
 <section id="services" class="services section-bg-dark">
     <div class="container" data-aos="fade-up">
         <div class="section-title text-center text-light">
-            <h2><?= lang('Messages.services_title') ?></h2> <!-- Título de servicios dinámico -->
-            <p><?= lang('Messages.services_description') ?></p> <!-- Descripción de servicios dinámica -->
+            <h2><?= lang('Messages.services_title') ?></h2>
+            <p><?= lang('Messages.services_description') ?></p>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 icon-box aeropuerto" data-aos="zoom-in" data-aos-delay="100">

@@ -1,6 +1,19 @@
 <?php
 
 return [
+    // Mensajes generales y del layout (main.php)
+    'company_name' => 'Transporte Ejecutivo',
+    'all_rights_reserved' => 'Todos los derechos reservados',
+    'home' => 'Inicio',
+    'history' => 'Historia',
+    'services' => 'Servicios',
+    'gallery' => 'Galería de Imágenes',
+    'clients' => 'Nuestros Clientes',
+    'footer_contact' => 'Atención 24 Horas de Lunes a Domingo.',
+    'footer_quality' => 'Contacta con nosotros para obtener servicios de transporte ejecutivo de alta calidad.',
+    'contact_us' => 'Contáctanos',
+
+    // Mensajes de la página de inicio (inicio.php)
     'title' => 'Transporte Ejecutivo Terrestre - Servicio Seguro y Confiable',
     'description' => 'Ofrecemos servicios de transporte ejecutivo seguro, puntual y confiable dentro y fuera de la ciudad, con atención 24/7. ¡Descubre cómo podemos ayudarte a llegar a tu destino de manera cómoda y segura!',
     'keywords' => 'transporte ejecutivo, transporte terrestre, servicios de transporte, transporte seguro, transporte confiable, seguridad, comodidad, transporte aeropuerto, transporte foráneo',

@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= esc($this->renderSection('title', 'Bienvenido')) ?> - Transporte Ejecutivo</title>
-    <meta name="description" content="<?= esc($this->renderSection('description', 'Descubre nuestro servicio de transporte ejecutivo. Seguridad, confort y puntualidad en cada viaje.')) ?>">
-    <meta name="keywords" content="<?= esc($this->renderSection('keywords', 'transporte ejecutivo, servicios de transporte, confort, seguridad')) ?>">
+    <title><?= esc($this->renderSection('title', lang('Messages.title'))) ?> - <?= lang('Messages.company_name') ?></title>
+    <meta name="description" content="<?= esc($this->renderSection('description', lang('Messages.description'))) ?>">
+    <meta name="keywords" content="<?= esc($this->renderSection('keywords', lang('Messages.keywords'))) ?>">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="<?= current_url() ?>">
 
@@ -17,17 +17,17 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="<?= esc($this->renderSection('title', 'Bienvenido')) ?> - Transporte Ejecutivo">
+    <meta property="og:title" content="<?= esc($this->renderSection('title', lang('Messages.title'))) ?> - <?= lang('Messages.company_name') ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= current_url() ?>">
     <meta property="og:image" content="<?= base_url('img/og-image.png') ?>">
-    <meta property="og:description" content="<?= esc($this->renderSection('description', 'Descubre nuestro servicio de transporte ejecutivo. Seguridad, confort y puntualidad en cada viaje.')) ?>">
+    <meta property="og:description" content="<?= esc($this->renderSection('description', lang('Messages.description'))) ?>">
     <?= $this->renderSection('open_graph') ?>
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= esc($this->renderSection('title', 'Bienvenido')) ?> - Transporte Ejecutivo">
-    <meta name="twitter:description" content="<?= esc($this->renderSection('description', 'Descubre nuestro servicio de transporte ejecutivo. Seguridad, confort y puntualidad en cada viaje.')) ?>">
+    <meta name="twitter:title" content="<?= esc($this->renderSection('title', lang('Messages.title'))) ?> - <?= lang('Messages.company_name') ?>">
+    <meta name="twitter:description" content="<?= esc($this->renderSection('description', lang('Messages.description'))) ?>">
     <meta name="twitter:image" content="<?= base_url('img/og-image.png') ?>">
 
     <!-- Icons -->
@@ -70,7 +70,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand" href="<?= base_url('/' . esc($locale)) ?>">
-                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="Transporte Ejecutivo" width="204">
+                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="<?= lang('Messages.company_name') ?>" width="204">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -78,19 +78,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == esc($locale)) ? 'active' : '' ?>" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= $locale === 'es' ? 'Inicio' : 'Home' ?></a>
+                                <a class="nav-link <?= (uri_string() == esc($locale)) ? 'active' : '' ?>" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= lang('Messages.home') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/historia') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= $locale === 'es' ? 'Historia' : 'History' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/historia') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= lang('Messages.history') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/servicios') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= $locale === 'es' ? 'Servicios' : 'Services' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/servicios') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= lang('Messages.services') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/galeria') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= $locale === 'es' ? 'Galería de Imágenes' : 'Gallery' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/galeria') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= lang('Messages.gallery') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/clientes') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= $locale === 'es' ? 'Nuestros Clientes' : 'Clients' ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/clientes') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= lang('Messages.clients') ?></a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-3">
@@ -157,9 +157,9 @@
                 <div class="row">
                     <!-- Información del Cliente -->
                     <div class="col-lg-6 footer-col">
-                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="Transporte Ejecutivo" class="footer-logo">
-                        <p>Atención 24 Horas de Lunes a Domingo.</p>
-                        <p>Contacta con nosotros para obtener servicios de transporte ejecutivo de alta calidad.</p>
+                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="<?= lang('Messages.company_name') ?>" class="footer-logo">
+                        <p><?= lang('Messages.footer_contact') ?></p>
+                        <p><?= lang('Messages.footer_quality') ?></p>
                         <ul class="footer-contact">
                             <li><a href="https://wa.me/528444277018" target="_blank"><i class="fa fa-phone"></i> Local: 844•427•7018</a></li>
                         </ul>
@@ -167,7 +167,7 @@
 
                     <!-- Contacto y Correos Electrónicos -->
                     <div class="col-lg-6 footer-col">
-                        <h5>Contáctanos:</h5>
+                        <h5><?= lang('Messages.contact_us') ?>:</h5>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ryk.das@gmail.com" target="_blank"><i class="fa fa-envelope"></i> ryk.das@gmail.com</a></p>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=luiis.das@gmail.com" target="_blank"><i class="fa fa-envelope"></i> luiis.das@gmail.com</a></p>
                         <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tapiaangel899@gmail.com" target="_blank"><i class="fa fa-envelope"></i> tapiaangel899@gmail.com</a></p>
@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="footer-copy">
-                © Transporte Ejecutivo - Todos los derechos reservados.
+                © <?= lang('Messages.company_name') ?> - <?= lang('Messages.all_rights_reserved') ?>.
             </div>
         </footer>
     </div>
