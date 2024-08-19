@@ -78,19 +78,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == esc($locale)) ? 'active' : '' ?>" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= lang('Messages.home') ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale || uri_string() == '') ? 'active' : '' ?>" aria-current="page" href="<?= base_url('/' . esc($locale)) ?>"><?= lang('Messages.home') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/historia') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= lang('Messages.history') ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/historia' || uri_string() == $locale . '/history') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/historia' : 'en/history') ?>"><?= lang('Messages.history') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/servicios') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= lang('Messages.services') ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/servicios' || uri_string() == $locale . '/services') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/servicios' : 'en/services') ?>"><?= lang('Messages.services') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/galeria') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= lang('Messages.gallery') ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/galeria' || uri_string() == $locale . '/gallery') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/galeria' : 'en/gallery') ?>"><?= lang('Messages.gallery') ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?= (uri_string() == $locale . '/clientes') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= lang('Messages.clients') ?></a>
+                                <a class="nav-link <?= (uri_string() == $locale . '/clientes' || uri_string() == $locale . '/clients') ? 'active' : '' ?>" href="<?= base_url($locale === 'es' ? 'es/clientes' : 'en/clients') ?>"><?= lang('Messages.clients') ?></a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ms-3">

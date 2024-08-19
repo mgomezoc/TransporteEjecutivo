@@ -39,6 +39,18 @@ return [
     'discover_more' => 'Discover more',
     'video_not_supported' => 'Your browser does not support video playback.',
 
+
+    // History page messages (historia.php)
+    'history_title' => 'History',
+    'history_description' => 'Discover the history of Executive Ground Transportation: over 18 years providing safe and reliable transportation services in Saltillo, Monterrey, and other destinations.',
+    'history_keywords' => 'executive transportation, transportation history, safe transportation, transportation in Saltillo, transportation in Monterrey, ground transportation, evasive driving, transportation safety',
+    'history_heading' => 'Our History',
+    'history_subheading' => 'Over 18 years providing safe and quality transportation in Northern Mexico',
+    'history_image_alt' => 'History of Executive Ground Transportation',
+    'history_content_1' => 'Based in Saltillo, Executive Ground Transportation has been a trusted pillar in transportation services in Northern Mexico, covering Saltillo, Monterrey, Nuevo Laredo, and Laredo, TX. Since we began operations over 18 years ago, we have been dedicated to providing safe, reliable, and high-quality transportation services.',
+    'history_content_2' => 'Our reputation has been built on customer satisfaction. With a constant focus on safety, our drivers undergo annual training in the "Evasive Driving & Accident Avoidance" course, ensuring that every trip is handled by experts.',
+    'history_content_3' => 'Whether for airport transportation or services within and outside the city, we are committed to providing exceptional service with 24/7 attention. The quality of our service has allowed us to gain the preference of clients over the years, becoming their trusted transportation option.',
+
     // Services page messages (servicios.php)
     'services_page_title' => 'Services - Executive Transportation',
     'services_page_description' => 'We offer a wide range of transportation services, including airport transfers, out-of-town services, messaging, and hourly transportation. Our commitment to quality and customer satisfaction sets us apart.',
