@@ -23,7 +23,7 @@
 </section>
 
 <!-- History Section -->
-<section id="history" class="history section-bg">
+<section id="history" class="history section-bg-dark">
     <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-lg-6">

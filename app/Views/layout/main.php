@@ -31,15 +31,16 @@
     <meta name="twitter:image" content="<?= base_url('img/og-image.png') ?>">
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url('assets/images/favicon/apple-touch-icon.png') ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/images/favicon/favicon-32x32.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/images/favicon/favicon-16x16.png') ?>">
+    <link rel="manifest" href="<?= base_url('assets/images/favicon/site.webmanifest') ?>">
+    <link rel="mask-icon" href="<?= base_url('assets/images/favicon/safari-pinned-tab.svg') ?>" color="#5bbad5">
+    <link rel="shortcut icon" href="<?= base_url('assets/images/favicon/favicon.ico') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="<?= base_url('assets/images/favicon/browserconfig.xml') ?>">
     <meta name="theme-color" content="#ffffff">
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
