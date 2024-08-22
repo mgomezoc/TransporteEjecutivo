@@ -425,13 +425,11 @@ a:hover {
   font-size: 1.5rem;
 }
 .gallery-page {
-  padding: 60px 0;
-  background-color: #1e2733;
-  color: #fff;
+  color: #eee;
 }
 .gallery-page h1,
 .gallery-page h2 {
-  color: #0056b3;
+  color: #fff;
 }
 .gallery-page .gallery-item img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -511,20 +509,18 @@ a:hover {
 .clients-page {
   padding: 60px 0;
 }
-.clients-page h1,
-.clients-page p.lead {
-  color: #dc3545;
-}
 .clients-page .client-logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #1f2938;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 120px;
+  max-width: 100%;
+  overflow: hidden;
 }
 .clients-page .client-logo {
   max-width: 100%;

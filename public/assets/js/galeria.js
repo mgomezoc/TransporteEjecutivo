@@ -32,14 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Animación de entrada con AOS
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-    });
-
     // Lógica adicional para hover o clics
     document.querySelectorAll('.gallery-item-wrapper').forEach(function (item) {
         item.addEventListener('mouseover', function () {

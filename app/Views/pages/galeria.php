@@ -15,7 +15,7 @@
 <?= $this->section('content') ?>
 
 <!-- Galería de Imágenes y Videos -->
-<section class="gallery-page">
+<section id="galeria" class="gallery-page section-bg-dark">
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center">

@@ -14,12 +14,12 @@
 
 <?= $this->section('content') ?>
 
-<section id="clients" class="clients-page">
+<section id="clients" class="clients-page section-bg-dark">
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 mb-4"><?= lang('Messages.our_clients') ?></h1>
-                <p class="lead text-white"><?= lang('Messages.clients_trust') ?></p>
+                <p class="lead"><?= lang('Messages.clients_trust') ?></p>
             </div>
         </div>
 
@@ -61,7 +61,7 @@
                 'gm.jpeg'
             ];
             foreach ($clientes as $cliente): ?>
-                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
                     <div class="client-logo-wrapper">
                         <img src="<?= base_url('assets/images/clientes/' . $cliente) ?>" class="img-fluid client-logo" alt="<?= pathinfo($cliente, PATHINFO_FILENAME) ?>">
                     </div>
