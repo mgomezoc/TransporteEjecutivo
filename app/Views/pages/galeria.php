@@ -24,80 +24,57 @@
             </div>
         </div>
 
-        <!-- Galería de Certificados -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-12">
-                <h2 class="mb-4 text-center"><?= lang('Messages.certifications') ?></h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Agregar certificados -->
-                    <div class="col">
-                        <a href="<?= base_url('assets/images/certificados/cert1.png') ?>" class="gallery-item" data-fancybox="certificados">
-                            <img src="<?= base_url('assets/images/certificados/cert1.png') ?>" class="img-fluid rounded" alt="Certificado 1">
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="<?= base_url('assets/images/certificados/cert2.png') ?>" class="gallery-item" data-fancybox="certificados">
-                            <img src="<?= base_url('assets/images/certificados/cert2.png') ?>" class="img-fluid rounded" alt="Certificado 2">
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="<?= base_url('assets/images/certificados/cert3.jpg') ?>" class="gallery-item" data-fancybox="certificados">
-                            <img src="<?= base_url('assets/images/certificados/cert3.jpg') ?>" class="img-fluid rounded" alt="Certificado 3">
-                        </a>
-                    </div>
-                    <!-- Agregar más certificados aquí si es necesario -->
-                </div>
-            </div>
+        <!-- Filtros -->
+        <div class="text-center mb-4">
+            <button class="filter-button active" data-filter="*">All</button>
+            <button class="filter-button" data-filter=".certificados"><?= lang('Messages.certifications') ?></button>
+            <button class="filter-button" data-filter=".vehiculos"><?= lang('Messages.vehicles') ?></button>
+            <button class="filter-button" data-filter=".videos"><?= lang('Messages.videos') ?></button>
         </div>
 
-        <!-- Galería de Vehículos -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-12">
-                <h2 class="mb-4 text-center"><?= lang('Messages.vehicles') ?></h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <?php for ($i = 1; $i <= 27; $i++): ?>
-                        <div class="col">
-                            <div class="gallery-item-wrapper">
-                                <a href="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="gallery-item" data-fancybox="vehiculos">
-                                    <div class="gallery-item-inner">
-                                        <img src="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="img-fluid rounded" alt="<?= lang('Messages.vehicle') ?> <?= $i ?>">
-                                        <div class="gallery-item-overlay"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    <?php endfor; ?>
-                </div>
+        <!-- Contenedor Isotope -->
+        <div class="isotope-grid">
+            <!-- Galería de Certificados -->
+            <div class="isotope-item certificados">
+                <a href="<?= base_url('assets/images/certificados/cert1.png') ?>" class="gallery-item" data-fancybox="certificados">
+                    <img src="<?= base_url('assets/images/certificados/cert1.png') ?>" class="img-fluid rounded" alt="Certificado 1">
+                </a>
             </div>
-        </div>
+            <div class="isotope-item certificados">
+                <a href="<?= base_url('assets/images/certificados/cert2.png') ?>" class="gallery-item" data-fancybox="certificados">
+                    <img src="<?= base_url('assets/images/certificados/cert2.png') ?>" class="img-fluid rounded" alt="Certificado 2">
+                </a>
+            </div>
+            <div class="isotope-item certificados">
+                <a href="<?= base_url('assets/images/certificados/cert3.jpg') ?>" class="gallery-item" data-fancybox="certificados">
+                    <img src="<?= base_url('assets/images/certificados/cert3.jpg') ?>" class="img-fluid rounded" alt="Certificado 3">
+                </a>
+            </div>
 
-        <!-- Galería de Videos -->
-        <div class="row justify-content-center mt-5">
-            <div class="col-12">
-                <h2 class="mb-4 text-center"><?= lang('Messages.videos') ?></h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="video-wrapper">
-                            <a href="<?= base_url('assets/videos/VID-20240815-WA0015.mp4') ?>" data-fancybox="videos" data-caption="Video 1">
-                                <img src="<?= base_url('assets/images/video_thumbnails/thumb1.png') ?>" alt="Video 1" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video-wrapper">
-                            <a href="<?= base_url('assets/videos/VID-20240815-WA0021.mp4') ?>" data-fancybox="videos" data-caption="Video 2">
-                                <img src="<?= base_url('assets/images/video_thumbnails/thumb2.png') ?>" alt="Video 2" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video-wrapper">
-                            <a href="<?= base_url('assets/videos/VID-20240815-WA0022.mp4') ?>" data-fancybox="videos" data-caption="Video 3">
-                                <img src="<?= base_url('assets/images/video_thumbnails/thumb3.png') ?>" alt="Video 3" class="img-fluid rounded">
-                            </a>
-                        </div>
-                    </div>
+            <!-- Galería de Vehículos -->
+            <?php for ($i = 1; $i <= 27; $i++): ?>
+                <div class="isotope-item vehiculos">
+                    <a href="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="gallery-item" data-fancybox="vehiculos">
+                        <img src="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="img-fluid rounded" alt="<?= lang('Messages.vehicle') ?> <?= $i ?>">
+                    </a>
                 </div>
+            <?php endfor; ?>
+
+            <!-- Galería de Videos -->
+            <div class="isotope-item videos">
+                <a href="<?= base_url('assets/videos/VID-20240815-WA0015.mp4') ?>" data-fancybox="videos" data-caption="Video 1">
+                    <img src="<?= base_url('assets/images/video_thumbnails/thumb1.png') ?>" alt="Video 1" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="isotope-item videos">
+                <a href="<?= base_url('assets/videos/VID-20240815-WA0021.mp4') ?>" data-fancybox="videos" data-caption="Video 2">
+                    <img src="<?= base_url('assets/images/video_thumbnails/thumb2.png') ?>" alt="Video 2" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="isotope-item videos">
+                <a href="<?= base_url('assets/videos/VID-20240815-WA0022.mp4') ?>" data-fancybox="videos" data-caption="Video 3">
+                    <img src="<?= base_url('assets/images/video_thumbnails/thumb3.png') ?>" alt="Video 3" class="img-fluid rounded">
+                </a>
             </div>
         </div>
     </div>
@@ -107,9 +84,123 @@
 
 <?= $this->section('styles') ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.27/dist/fancybox.css">
+<style>
+    /* Botones de filtrado */
+    .filter-button {
+        background-color: #0056b3;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+
+    .filter-button:hover,
+    .filter-button.active {
+        background-color: #ff5733;
+        color: #fff;
+    }
+
+    /* Alineación y centrado de la galería */
+    .gallery-page {
+        text-align: center;
+    }
+
+    .isotope-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .isotope-item {
+        padding: 15px;
+        flex: 1 0 21%;
+        max-width: 21%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .isotope-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .isotope-item:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .isotope-item {
+            flex: 1 0 48%;
+            max-width: 48%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .isotope-item {
+            flex: 1 0 100%;
+            max-width: 100%;
+        }
+    }
+</style>
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.27/dist/fancybox.umd.js"></script>
-<script src="<?= base_url('assets/js/galeria.js') ?>"></script>
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inicia Fancybox
+        Fancybox.bind('[data-fancybox]', {
+            Thumbs: false,
+            Toolbar: {
+                display: [{
+                        id: 'zoom',
+                        position: 'left'
+                    },
+                    {
+                        id: 'download',
+                        position: 'left'
+                    },
+                    {
+                        id: 'close',
+                        position: 'right'
+                    }
+                ]
+            }
+        });
+
+        // Inicializa Isotope
+        var iso = new Isotope('.isotope-grid', {
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+
+        // Filtrado con botones
+        var filterButtons = document.querySelectorAll('.filter-button');
+        filterButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var filterValue = this.getAttribute('data-filter');
+                filterButtons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                iso.arrange({
+                    filter: filterValue
+                });
+            });
+        });
+    });
+</script>
 <?= $this->endSection() ?>

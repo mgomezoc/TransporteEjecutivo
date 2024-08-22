@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Inicia Fancybox para todas las imágenes y videos
-    Fancybox.bind('[data-fancybox="certificados"]', {
+    // Inicia Fancybox
+    Fancybox.bind('[data-fancybox]', {
         Thumbs: false,
         Toolbar: {
             display: [
@@ -11,35 +11,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    Fancybox.bind('[data-fancybox="vehiculos"]', {
-        Thumbs: false,
-        Toolbar: {
-            display: [
-                { id: 'zoom', position: 'left' },
-                { id: 'download', position: 'left' },
-                { id: 'close', position: 'right' }
-            ]
-        }
+    // Inicializa Masonry
+    var masonryGrid = document.querySelector('.masonry-grid');
+    var msnry = new Masonry(masonryGrid, {
+        itemSelector: '.masonry-item',
+        columnWidth: '.masonry-item',
+        percentPosition: true
     });
 
-    Fancybox.bind('[data-fancybox="videos"]', {
-        Thumbs: false,
-        Toolbar: {
-            display: [
-                { id: 'play', position: 'left' },
-                { id: 'close', position: 'right' }
-            ]
-        }
-    });
-
-    // Lógica adicional para hover o clics
-    document.querySelectorAll('.gallery-item-wrapper').forEach(function (item) {
-        item.addEventListener('mouseover', function () {
-            this.classList.add('hovered');
-        });
-
-        item.addEventListener('mouseout', function () {
-            this.classList.remove('hovered');
+    // Filtrado con botones
+    var filterButtons = document.querySelectorAll('.filter-button');
+    filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var filterValue = this.getAttribute('data-filter');
+            filterButtons.forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+            // Filtro usando Isotope o similar
+            msnry.arrange({
+                filter: filterValue === '*' ? '*' : filterValue
+            });
         });
     });
 });
