@@ -16,12 +16,45 @@
 
 <!-- Hero Section -->
 <section id="hero" class="d-flex align-items-center">
-    <div class="container text-center" data-aos="fade-up">
-        <h1><?= lang('Messages.hero_title') ?></h1>
-        <h2><?= lang('Messages.hero_subtitle') ?></h2>
-        <a href="#services" class="btn-get-started scrollto"><?= lang('Messages.learn_more') ?></a>
+    <div class="container-fluid p-0">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<?= base_url('assets/images/slider/slider-1.png') ?>" alt="Slider 1" class="img-fluid">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1><?= lang('Messages.hero_title') ?></h1>
+                        <h2><?= lang('Messages.hero_subtitle') ?></h2>
+                        <a href="#services" class="btn-get-started scrollto"><?= lang('Messages.learn_more') ?></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= base_url('assets/images/slider/slider-2.png') ?>" alt="Slider 2" class="img-fluid">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1><?= lang('Messages.hero_title') ?></h1>
+                        <h2><?= lang('Messages.hero_subtitle') ?></h2>
+                        <a href="#services" class="btn-get-started scrollto"><?= lang('Messages.learn_more') ?></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<?= base_url('assets/images/slider/slider-3.png') ?>" alt="Slider 3" class="img-fluid">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1><?= lang('Messages.hero_title') ?></h1>
+                        <h2><?= lang('Messages.hero_subtitle') ?></h2>
+                        <a href="#services" class="btn-get-started scrollto"><?= lang('Messages.learn_more') ?></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </div>
 </section>
+
 
 <!-- Services Section -->
 <section id="services" class="services section-bg-dark">
@@ -30,23 +63,23 @@
             <h2><?= lang('Messages.services_title') ?></h2>
             <p><?= lang('Messages.services_description') ?></p>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 icon-box aeropuerto">
+        <div class="row justify-content-center g-3">
+            <div class="col-md-6 icon-box">
                 <div class="icon"><i class="fas fa-plane"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.airport_transport') ?></a></h4>
                 <p class="description"><?= lang('Messages.airport_transport_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box foreano">
+            <div class="col-md-6 icon-box">
                 <div class="icon"><i class="fas fa-road"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.foreign_transport') ?></a></h4>
                 <p class="description"><?= lang('Messages.foreign_transport_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box mensajeria">
+            <div class="col-md-6 icon-box">
                 <div class="icon"><i class="fas fa-shipping-fast"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.executive_messaging') ?></a></h4>
                 <p class="description"><?= lang('Messages.executive_messaging_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box por-tiempo">
+            <div class="col-md-6 icon-box">
                 <div class="icon"><i class="fas fa-clock"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.time_service') ?></a></h4>
                 <p class="description"><?= lang('Messages.time_service_desc') ?></p>
