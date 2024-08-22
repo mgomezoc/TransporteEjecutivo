@@ -71,7 +71,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand" href="<?= base_url('/' . esc($locale)) ?>">
-                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="<?= lang('Messages.company_name') ?>" width="204">
+                        <img src="<?= base_url('assets/images/logo.webp') ?>" alt="<?= lang('Messages.company_name') ?>" width="204">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -117,28 +117,28 @@
                     <div class="swiper-wrapper">
                         <?php
                         $clientes = [
-                            '_0004_azteca.png',
-                            '_0002_chrysler.png',
-                            '_0009_televisa.png',
+                            '_0004_azteca.webp',
+                            '_0002_chrysler.webp',
+                            '_0009_televisa.webp',
                             'el_universal.jpeg',
-                            '_0005_powertrain.png',
-                            '_0006_millsteel.png',
-                            '_0007_martinrea.png',
-                            '_0008_jiffytite.png',
-                            '_0010_faurencia.png',
-                            '_0012_metalflow.png',
+                            '_0005_powertrain.webp',
+                            '_0006_millsteel.webp',
+                            '_0007_martinrea.webp',
+                            '_0008_jiffytite.webp',
+                            '_0010_faurencia.webp',
+                            '_0012_metalflow.webp',
                             'maussan.jpeg',
-                            '_0016_formex.png',
-                            '_0019_spentech.png',
-                            '_0020_das.png',
-                            '_0022_brunner.png',
-                            'airway.png',
-                            'goss.png',
+                            '_0016_formex.webp',
+                            '_0019_spentech.webp',
+                            '_0020_das.webp',
+                            '_0022_brunner.webp',
+                            'airway.webp',
+                            'goss.webp',
                             'LaZboy.jpg',
                             'pacCNC.jpg',
-                            'ufi.png',
+                            'ufi.webp',
                             'yanfeng_2.jpg',
-                            'yanfeng.png',
+                            'yanfeng.webp',
                         ];
 
                         foreach ($clientes as $cliente): ?>
@@ -158,7 +158,7 @@
                 <div class="row">
                     <!-- Información del Cliente -->
                     <div class="col-lg-6 footer-col">
-                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="<?= lang('Messages.company_name') ?>" class="footer-logo">
+                        <img src="<?= base_url('assets/images/logo.webp') ?>" alt="<?= lang('Messages.company_name') ?>" class="footer-logo">
                         <p><?= lang('Messages.footer_contact') ?></p>
                         <p><?= lang('Messages.footer_quality') ?></p>
                         <ul class="footer-contact">
@@ -182,7 +182,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
