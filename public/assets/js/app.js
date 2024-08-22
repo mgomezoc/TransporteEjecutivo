@@ -56,7 +56,3 @@ $(document).ready(function () {
         return false;
     });
 });
-
-function setActiveMenu(page) {
-    $(`.navigation-link[data-page=${page}]`).addClass('active');
-}

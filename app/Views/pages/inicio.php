@@ -31,22 +31,22 @@
             <p><?= lang('Messages.services_description') ?></p>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 icon-box aeropuerto" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 icon-box aeropuerto">
                 <div class="icon"><i class="fas fa-plane"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.airport_transport') ?></a></h4>
                 <p class="description"><?= lang('Messages.airport_transport_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box foreano" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 icon-box foreano">
                 <div class="icon"><i class="fas fa-road"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.foreign_transport') ?></a></h4>
                 <p class="description"><?= lang('Messages.foreign_transport_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box mensajeria" data-aos="zoom-in" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 icon-box mensajeria">
                 <div class="icon"><i class="fas fa-shipping-fast"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.executive_messaging') ?></a></h4>
                 <p class="description"><?= lang('Messages.executive_messaging_desc') ?></p>
             </div>
-            <div class="col-lg-4 col-md-6 icon-box por-tiempo" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-lg-4 col-md-6 icon-box por-tiempo">
                 <div class="icon"><i class="fas fa-clock"></i></div>
                 <h4 class="title"><a href="#"><?= lang('Messages.time_service') ?></a></h4>
                 <p class="description"><?= lang('Messages.time_service_desc') ?></p>
@@ -80,7 +80,7 @@
                     <li><i class="bx bx-check-double"></i> <?= lang('Messages.service_24_7') ?></li>
                     <li><i class="bx bx-check-double"></i> <?= lang('Messages.security_comfort') ?></li>
                 </ul>
-                <a href="#" class="read-more"><?= lang('Messages.discover_more') ?> <i class="bi bi-arrow-right"></i></a>
+                <a href="https://wa.me/528444277018" target="_blank" class="read-more"><?= lang('Messages.discover_more') ?> <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </div>

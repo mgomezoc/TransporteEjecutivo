@@ -29,6 +29,7 @@
             <div class="col-12">
                 <h2 class="mb-4 text-center"><?= lang('Messages.certifications') ?></h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Agregar certificados -->
                     <div class="col">
                         <a href="<?= base_url('assets/images/certificados/cert1.png') ?>" class="gallery-item" data-fancybox="certificados">
                             <img src="<?= base_url('assets/images/certificados/cert1.png') ?>" class="img-fluid rounded" alt="Certificado 1">
@@ -60,9 +61,7 @@
                                 <a href="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="gallery-item" data-fancybox="vehiculos">
                                     <div class="gallery-item-inner">
                                         <img src="<?= base_url("assets/images/galeria/$i.jpg") ?>" class="img-fluid rounded" alt="<?= lang('Messages.vehicle') ?> <?= $i ?>">
-                                        <div class="gallery-item-overlay">
-
-                                        </div>
+                                        <div class="gallery-item-overlay"></div>
                                     </div>
                                 </a>
                             </div>
@@ -79,17 +78,23 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="video-wrapper">
-                            <iframe src="https://player.vimeo.com/video/689116476?portrait=0&amp;wmode=transparent" width="100%" height="200" allow="autoplay; fullscreen" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+                            <a href="<?= base_url('assets/videos/VID-20240815-WA0015.mp4') ?>" data-fancybox="videos" data-caption="Video 1">
+                                <img src="<?= base_url('assets/images/video_thumbnails/thumb1.png') ?>" alt="Video 1" class="img-fluid rounded">
+                            </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="video-wrapper">
-                            <iframe src="https://player.vimeo.com/video/689116512?portrait=0&amp;wmode=transparent" width="100%" height="200" allow="autoplay; fullscreen" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+                            <a href="<?= base_url('assets/videos/VID-20240815-WA0021.mp4') ?>" data-fancybox="videos" data-caption="Video 2">
+                                <img src="<?= base_url('assets/images/video_thumbnails/thumb2.png') ?>" alt="Video 2" class="img-fluid rounded">
+                            </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="video-wrapper">
-                            <iframe src="https://player.vimeo.com/video/689116451?portrait=0&amp;wmode=transparent" width="100%" height="200" allow="autoplay; fullscreen" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+                            <a href="<?= base_url('assets/videos/VID-20240815-WA0022.mp4') ?>" data-fancybox="videos" data-caption="Video 3">
+                                <img src="<?= base_url('assets/images/video_thumbnails/thumb3.png') ?>" alt="Video 3" class="img-fluid rounded">
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -54,6 +54,7 @@ a {
 // Header Styles
 .header {
     background-color: @header-bg-color !important;
+    background: @header-bg-color url(../images/header.png) no-repeat center center;
     border-bottom: 3px solid @header-border-color; // Borde inferior sutil para separación
 
     .navbar {
@@ -123,7 +124,7 @@ a {
 
 .clients-carousel {
     padding: 60px 0;
-    background-color: #1e2733;
+    background: linear-gradient(135deg, rgba(13, 23, 40, 1) 0%, rgba(12, 32, 61, 1) 50%, rgba(11, 29, 58, 1) 70%, rgba(11, 29, 58, 1) 100%);
     overflow: hidden;
     .swiper-container {
         padding: 20px 0;
@@ -213,7 +214,8 @@ a {
 
 // Services Section
 .section-bg-dark {
-    background-color: #1e2733; // Fondo oscuro
+    background: #1e2733 url(../images/featureBG.png) no-repeat right bottom fixed;
+    background-size: cover;
     padding: 60px 0;
     color: #fff; // Texto claro
     .section-title {
@@ -580,7 +582,8 @@ a {
 
 // Footer Styles
 .footer {
-    background-color: #001f3f; // Color primario más oscuro para mejor contraste
+    background: #001f3f url(../images/footerBG.png) no-repeat center center;
+    background-size: cover;
     color: #fff;
     padding: 40px 0 0 0;
     text-align: center;
@@ -670,9 +673,9 @@ a {
     }
 
     .footer-copy {
-        background-color: darken(#001f3f, 10%);
-        padding: 15px 0;
-        font-size: 14px;
+        background: linear-gradient(135deg, rgba(13, 23, 40, 1) 0%, rgba(12, 32, 61, 1) 50%, rgba(11, 29, 58, 1) 70%, rgba(11, 29, 58, 1) 100%);
+        padding: 7px 0;
+        font-size: 12px;
         color: lighten(#ccc, 10%);
         margin-top: 20px;
     }
