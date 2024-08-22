@@ -164,37 +164,41 @@ a {
     position: relative;
     z-index: 1;
 
-    &.historia {
-        background: #ccc url('../images/slider/slider-historia.png');
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
     }
 
     h1 {
         font-size: 3rem;
         margin-bottom: 20px;
-        animation: fadeInDown 1.2s ease-in-out; // Animación de entrada
-        opacity: 0; // Inicia invisible para la animación personalizada
-        transform: translateY(-20px); // Posición inicial fuera de la vista
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out; // Transición para suavizar la animación
-        animation-delay: 0.3s; // Demora para hacer la animación más interesante
-        animation-fill-mode: forwards; // Asegura que la animación se mantenga en su estado final
+        animation: fadeInDown 1.2s ease-in-out;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
     }
 
-    h2 {
+    .lead {
         font-size: 1.5rem;
         margin-bottom: 30px;
-        animation: fadeInUp 1.5s ease-in-out; // Animación de entrada
-        opacity: 0; // Inicia invisible para la animación personalizada
-        transform: translateY(20px); // Posición inicial fuera de la vista
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out; // Transición para suavizar la animación
-        animation-delay: 0.6s; // Demora para hacer la animación más interesante
-        animation-fill-mode: forwards; // Asegura que la animación se mantenga en su estado final
-    }
-
-    // Transiciones adicionales si se desea algún efecto al pasar el cursor
-    h1:hover,
-    h2:hover {
-        transform: scale(1.05); // Amplía ligeramente el texto al pasar el cursor
-        transition: transform 0.3s ease-in-out;
+        animation: fadeInUp 1.5s ease-in-out;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        animation-delay: 0.6s;
+        animation-fill-mode: forwards;
     }
 
     .btn-get-started {
