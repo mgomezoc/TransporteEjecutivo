@@ -20,7 +20,7 @@
         <div class="swiper hero-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="<?= base_url('assets/images/slider/slider-1.webp') ?>" alt="Slider 1" class="img-fluid">
+                    <img src="<?= base_url('assets/images/slider/slider-1.webp') ?>" alt="Slider 1" class="img-fluid" width="1920" height="1080">
                     <div class="overlay"></div>
                     <div class="hero-content">
                         <h1><?= lang('Messages.hero_title') ?></h1>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?= base_url('assets/images/slider/slider-2.webp') ?>" alt="Slider 2" class="img-fluid">
+                    <img src="<?= base_url('assets/images/slider/slider-2.webp') ?>" alt="Slider 2" class="img-fluid" width="1920" height="1080">
                     <div class="overlay"></div>
                     <div class="hero-content">
                         <h1><?= lang('Messages.hero_title') ?></h1>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?= base_url('assets/images/slider/slider-3.webp') ?>" alt="Slider 3" class="img-fluid">
+                    <img src="<?= base_url('assets/images/slider/slider-3.webp') ?>" alt="Slider 3" class="img-fluid" width="1920" height="1080">
                     <div class="overlay"></div>
                     <div class="hero-content">
                         <h1><?= lang('Messages.hero_title') ?></h1>
@@ -96,7 +96,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
-                <video class="img-fluid" controls preload="auto" loading="lazy" poster="<?= base_url('assets/images/porque-elegirnos.webp') ?>">
+                <video class="img-fluid" controls preload="auto" loading="lazy" poster="<?= base_url('assets/images/porque-elegirnos.webp') ?>" width="1920" height="1080">
                     <source src="<?= base_url('assets/images/porque-elegirnos.mp4') ?>" type="video/mp4">
                     <source src="<?= base_url('assets/images/porque-elegirnos.webm') ?>" type="video/webm">
                     <source src="<?= base_url('assets/images/porque-elegirnos.ogv') ?>" type="video/ogg">
@@ -122,8 +122,15 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('styles') ?>
+<style>
+    /* Establece dimensiones explícitas para imágenes para evitar el cambio de diseño */
+    img {
+        width: 100%;
+        height: auto;
+    }
+</style>
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>
-<script src="<?= base_url('assets/js/inicio.js') ?>"></script>
+<script src="<?= base_url('assets/js/inicio.js') ?>" defer></script>
 <?= $this->endSection() ?>

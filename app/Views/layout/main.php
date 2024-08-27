@@ -41,12 +41,35 @@
     <meta name="msapplication-config" content="<?= base_url('assets/images/favicon/browserconfig.xml') ?>">
     <meta name="theme-color" content="#001f3f"> <!-- Ajuste al color del tema -->
 
+    <!-- Inline Critical CSS -->
+    <style>
+        /* CSS crítico para el contenido above-the-fold */
+        body {
+            background-color: #001f3f;
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .header,
+        .footer {
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .header .navbar-brand img {
+            width: 204px;
+        }
+
+        /* Otros estilos críticos */
+    </style>
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>?v=<?= time() ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" defer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" defer>
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>?v=<?= time() ?>" defer>
     <?= $this->renderSection('styles') ?>
 
     <script src="https://kit.fontawesome.com/901438e2f4.js" crossorigin="anonymous"></script>
@@ -70,7 +93,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand" href="<?= base_url('/' . esc($locale)) ?>">
-                        <img src="<?= base_url('assets/images/logo.webp') ?>" alt="<?= lang('Messages.company_name') ?>" width="204">
+                        <img src="<?= base_url('assets/images/logo.webp') ?>" alt="<?= lang('Messages.company_name') ?>">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -143,7 +166,7 @@
 
                         foreach ($clientes as $cliente): ?>
                             <div class="swiper-slide">
-                                <img src="<?= base_url('assets/images/clientes/' . $cliente) ?>" alt="<?= pathinfo($cliente, PATHINFO_FILENAME) ?>" class="img-fluid">
+                                <img src="<?= base_url('assets/images/clientes/' . $cliente) ?>" alt="<?= pathinfo($cliente, PATHINFO_FILENAME) ?>" class="img-fluid" loading="lazy" width="150" height="100">
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -183,10 +206,10 @@
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="<?= base_url('assets/js/app.js') ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+    <script src="<?= base_url('assets/js/app.js') ?>" defer></script>
     <?= $this->renderSection('scripts') ?>
 </body>
 
