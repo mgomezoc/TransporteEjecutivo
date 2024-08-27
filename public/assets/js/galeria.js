@@ -11,26 +11,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Inicializa Masonry
-    var masonryGrid = document.querySelector('.masonry-grid');
-    var msnry = new Masonry(masonryGrid, {
-        itemSelector: '.masonry-item',
-        columnWidth: '.masonry-item',
-        percentPosition: true
-    });
+    // Inicializa Isotope solo después de que todas las imágenes se hayan cargado
+    var imgLoad = imagesLoaded('.isotope-grid', function () {
+        var iso = new Isotope('.isotope-grid', {
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
 
-    // Filtrado con botones
-    var filterButtons = document.querySelectorAll('.filter-button');
-    filterButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            var filterValue = this.getAttribute('data-filter');
-            filterButtons.forEach(function (btn) {
-                btn.classList.remove('active');
-            });
-            this.classList.add('active');
-            // Filtro usando Isotope o similar
-            msnry.arrange({
-                filter: filterValue === '*' ? '*' : filterValue
+        // Filtrado con botones
+        var filterButtons = document.querySelectorAll('.filter-button');
+        filterButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var filterValue = this.getAttribute('data-filter');
+                filterButtons.forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                iso.arrange({
+                    filter: filterValue
+                });
             });
         });
     });

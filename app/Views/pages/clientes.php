@@ -33,17 +33,18 @@
                 'pacCNC.jpg',
                 'ufi.png',
                 'yanfeng.png',
+                'el_universal.jpeg',
+                '_0009_televisa.png',
+                '_0004_azteca.png',
                 'yanfeng_2.jpg',
                 '_0000_lazboy.png',
                 '_0001_polyone.png',
                 '_0002_chrysler.png',
                 '_0003_bocar.png',
-                '_0004_azteca.png',
                 '_0005_powertrain.png',
                 '_0006_millsteel.png',
                 '_0007_martinrea.png',
                 '_0008_jiffytite.png',
-                '_0009_televisa.png',
                 '_0010_faurencia.png',
                 '_0011_kpmg.png',
                 '_0012_metalflow.png',
@@ -52,13 +53,14 @@
                 '_0015_doubletree.png',
                 '_0016_formex.png',
                 '_0017_hegenscheidt.png',
-                'el_universal.jpeg',
                 '_0019_spentech.png',
                 '_0020_das.png',
                 '_0022_brunner.png',
                 'adient.jpeg',
                 'bocar.jpeg',
-                'gm.jpeg'
+                'gm.jpeg',
+                'logo-armo-blue-02.png',
+                'geon.jpeg'
             ];
             foreach ($clientes as $cliente): ?>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">

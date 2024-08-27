@@ -37,10 +37,9 @@
     <link rel="manifest" href="<?= base_url('assets/images/favicon/site.webmanifest') ?>">
     <link rel="mask-icon" href="<?= base_url('assets/images/favicon/safari-pinned-tab.svg') ?>" color="#5bbad5">
     <link rel="shortcut icon" href="<?= base_url('assets/images/favicon/favicon.ico') ?>">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#001f3f">
     <meta name="msapplication-config" content="<?= base_url('assets/images/favicon/browserconfig.xml') ?>">
-    <meta name="theme-color" content="#ffffff">
-
+    <meta name="theme-color" content="#001f3f"> <!-- Ajuste al color del tema -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
@@ -117,10 +116,10 @@
                     <div class="swiper-wrapper">
                         <?php
                         $clientes = [
+                            'el_universal.jpeg',
+                            '_0009_televisa.webp',
                             '_0004_azteca.webp',
                             '_0002_chrysler.webp',
-                            '_0009_televisa.webp',
-                            'el_universal.jpeg',
                             '_0005_powertrain.webp',
                             '_0006_millsteel.webp',
                             '_0007_martinrea.webp',
@@ -139,6 +138,7 @@
                             'ufi.webp',
                             'yanfeng_2.jpg',
                             'yanfeng.webp',
+                            'logo-armo-blue-02.png'
                         ];
 
                         foreach ($clientes as $cliente): ?>

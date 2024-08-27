@@ -157,6 +157,7 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.27/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 <script>
@@ -181,23 +182,25 @@
             }
         });
 
-        // Inicializa Isotope
-        var iso = new Isotope('.isotope-grid', {
-            itemSelector: '.isotope-item',
-            layoutMode: 'fitRows'
-        });
+        // Inicializa Isotope solo después de que todas las imágenes se hayan cargado
+        var imgLoad = imagesLoaded('.isotope-grid', function() {
+            var iso = new Isotope('.isotope-grid', {
+                itemSelector: '.isotope-item',
+                layoutMode: 'fitRows'
+            });
 
-        // Filtrado con botones
-        var filterButtons = document.querySelectorAll('.filter-button');
-        filterButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                var filterValue = this.getAttribute('data-filter');
-                filterButtons.forEach(function(btn) {
-                    btn.classList.remove('active');
-                });
-                this.classList.add('active');
-                iso.arrange({
-                    filter: filterValue
+            // Filtrado con botones
+            var filterButtons = document.querySelectorAll('.filter-button');
+            filterButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var filterValue = this.getAttribute('data-filter');
+                    filterButtons.forEach(function(btn) {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    iso.arrange({
+                        filter: filterValue
+                    });
                 });
             });
         });
