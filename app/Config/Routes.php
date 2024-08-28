@@ -6,6 +6,9 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+// Ruta para el Sitemap
+$routes->get('sitemap.xml', 'Sitemap::index');
+
 // Grupo de rutas con prefijo de idioma
 $routes->group('{locale}', ['filter' => 'language'], function ($routes) {
     $routes->get('/', 'PagesController::index');
