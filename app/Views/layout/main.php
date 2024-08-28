@@ -8,7 +8,7 @@
     <meta name="description" content="<?= esc($this->renderSection('description', lang('Messages.description'))) ?>">
     <meta name="keywords" content="<?= esc($this->renderSection('keywords', lang('Messages.keywords'))) ?>">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="<?= current_url() ?>">
+    <link rel="canonical" href="<?= base_url(uri_string()) ?>">
 
     <!-- Preconnect & Prefetch -->
     <link rel="preconnect" href="https://www.googletagmanager.com">

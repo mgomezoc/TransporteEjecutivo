@@ -27,9 +27,10 @@ $routes->group('{locale}', ['filter' => 'language'], function ($routes) {
 });
 
 // Redirección a idioma por defecto (español)
-$routes->get('/', function () {
-    return redirect()->to('/es');
-});
+$routes->addRedirect('/', '/es');
 
 // Ruta para manejar el error 404 personalizado
 $routes->set404Override('ErrorsController::custom404');
+
+// Asegúrate de que la ruta predeterminada es manejada correctamente
+$routes->get('/', 'PagesController::index');
