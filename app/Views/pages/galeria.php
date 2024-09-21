@@ -52,7 +52,7 @@
             </div>
 
             <!-- Galería de Vehículos -->
-            <?php for ($i = 1; $i <= 27; $i++): ?>
+            <?php for ($i = 1; $i <= 29; $i++): ?>
                 <div class="isotope-item vehiculos">
                     <a href="<?= base_url("assets/images/galeria/$i.webp") ?>" class="gallery-item" data-fancybox="vehiculos">
                         <img src="<?= base_url("assets/images/galeria/$i.webp") ?>" class="img-fluid rounded" alt="<?= lang('Messages.vehicle') ?> <?= $i ?>">

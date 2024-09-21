@@ -60,7 +60,8 @@
                 'bocar.jpeg',
                 'gm.jpeg',
                 'logo-armo-blue-02.png',
-                'geon.jpeg'
+                'geon.jpeg',
+                'mubea.jpeg'
             ];
             foreach ($clientes as $cliente): ?>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">

@@ -161,7 +161,8 @@
                             'ufi.webp',
                             'yanfeng_2.jpg',
                             'yanfeng.webp',
-                            'logo-armo-blue-02.png'
+                            'logo-armo-blue-02.png',
+                            'mubea.jpeg'
                         ];
 
                         foreach ($clientes as $cliente): ?>

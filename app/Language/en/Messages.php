@@ -15,9 +15,9 @@ return [
 
     // Home page messages (inicio.php)
     'title' => 'Executive Ground Transportation - Safe and Reliable Service',
-    'description' => 'We offer safe, punctual, and reliable executive transportation services within and outside the city, with 24/7 availability. Discover how we can help you reach your destination comfortably and safely!',
+    'description' => 'We offer safe, Always On time, and reliable executive transportation services within and outside the city, with 24/7 availability. Discover how we can help you reach your destination comfortably and safely!',
     'keywords' => 'executive transportation, ground transportation, transportation services, safe transportation, reliable transportation, safety, comfort, airport transportation, out-of-town transportation',
-    'hero_title' => 'Safe, Punctual, and Reliable Transportation',
+    'hero_title' => 'Safe, Always On time, and Reliable Transportation',
     'hero_subtitle' => 'Your best ally in executive ground transportation',
     'learn_more' => 'Learn More',
     'services_title' => 'Services',
