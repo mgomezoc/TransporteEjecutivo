@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="<?= base_url('assets/images/slider/slider-2.webp') ?>" alt="Slider 2" class="img-fluid" width="1920" height="1080">
+                    <img src="<?= base_url('assets/images/slider/slider-2.png') ?>" alt="Slider 2" class="img-fluid" width="1920" height="1080">
                     <div class="overlay"></div>
                     <div class="hero-content">
                         <h1><?= lang('Messages.hero_title') ?></h1>
