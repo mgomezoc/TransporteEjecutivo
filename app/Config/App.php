@@ -6,7 +6,9 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
-    public string $baseURL = 'http://transporteejecutivo.test/public/';
+    // ⚠️ IMPORTANTE: Para desarrollo local, la baseURL debe apuntar SOLO al dominio
+    // Laragon ya está configurado para apuntar a la carpeta /public/
+    public string $baseURL = 'http://transporteejecutivo.test/';
 
     public string $indexPage = '';
 
@@ -24,7 +26,9 @@ class App extends BaseConfig
 
     public string $charset = 'UTF-8';
 
-    public bool $forceGlobalSecureRequests = true;
+    // ⚠️ IMPORTANTE: En desarrollo local con HTTP, debe ser false
+    // En producción con HTTPS, cambiar a true
+    public bool $forceGlobalSecureRequests = false;
 
     public array $allowedHostnames = [];
 

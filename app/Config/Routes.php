@@ -26,11 +26,10 @@ $routes->group('{locale}', ['filter' => 'language'], function ($routes) {
     $routes->get('clients', 'PagesController::clientes', ['as' => 'clients-en']);
 });
 
-// No necesitas la redirección manual aquí
-// La redirección será manejada por el filtro 'language'
-
-// Ruta para manejar el error 404 personalizado
-$routes->set404Override('ErrorsController::custom404');
-
-// Asegúrate de que la ruta predeterminada es manejada correctamente
+// Ruta raíz: redirige al idioma por defecto
+// El filtro 'language' se encargará de la redirección
 $routes->get('/', 'PagesController::index');
+
+// ⚠️ COMENTADO: Error 404 personalizado (por ahora)
+// Descomentar cuando crees el ErrorsController
+// $routes->set404Override('ErrorsController::custom404');

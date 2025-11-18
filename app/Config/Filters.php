@@ -26,12 +26,14 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
-        'language'      => Language::class,  // Filtro para manejo de idioma
+        'language'      => Language::class,
     ];
 
     public array $required = [
         'before' => [
-            'forcehttps',
+            // ⚠️ COMENTADO para desarrollo local (HTTP)
+            // Descomentar en producción con HTTPS
+            // 'forcehttps',
             'pagecache',
         ],
         'after' => [
